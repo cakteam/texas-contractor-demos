@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bourdon Fence Co. LLC | Fort Worth & DFW | Custom Cedar & Iron Fences, Pergolas</title>
+  <meta name="description" content="Family-owned luxury Western Red Cedar privacy fences, wrought iron gates, and custom pergolas in Fort Worth & DFW. Steel posts in concrete. Call (682) 368-9172.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              950: '#071b13',
+              900: '#0f2d21',
+              800: '#164231',
+              700: '#1e5842',
+              600: '#287357',
+              500: '#349370',
+              100: '#dcfce7',
+              50: '#f0fdf4'
+            },
+            cedar: {
+              700: '#8c4217',
+              600: '#b45309',
+              500: '#d97706',
+              400: '#f59e0b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    img, video { max-width: 100%; height: auto; }
+    .forest-pattern {
+      background-color: #071b13;
+      background-image: radial-gradient(rgba(52, 147, 112, 0.15) 1px, transparent 1px), radial-gradient(rgba(180, 83, 9, 0.1) 1px, #071b13 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top Windstorm Ticker -->
+  <div class="bg-forest-950 text-emerald-200 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-forest-800 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 w-full min-w-0">
+      <div class="flex items-center gap-1.5 min-w-0 flex-1">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-cedar-400 animate-ping"></span>
+        <span class="font-bold text-cedar-400 shrink-0 text-[10px] sm:text-xs">Texas Windstorm Protection:</span>
+        <span class="truncate text-slate-300 text-[10px] sm:text-xs">Heavy schedule open for post-storm fence replacement across Fort Worth & DFW.</span>
+      </div>
+      <a href="tel:6823689172" class="shrink-0 flex items-center gap-1 font-extrabold text-cedar-400 hover:text-white transition-colors text-xs sm:text-sm">
+        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+        <span class="font-black">(682) 368-9172</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-forest-900 to-forest-700 flex items-center justify-center text-white shrink-0 shadow-md">
+          <i data-lucide="fence" class="w-6 h-6 text-cedar-400"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-black tracking-tight text-slate-950 truncate flex items-center gap-1">
+            BOURDON <span class="text-forest-700 font-extrabold text-xs sm:text-sm">FENCE CO.</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">Fort Worth & DFW • Family Owned by Ryan & Brittany</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-forest-700 transition-colors">Custom Fences</a>
+        <a href="#comparison" class="hover:text-forest-700 transition-colors">Before & After</a>
+        <a href="#estimator" class="hover:text-forest-700 transition-colors">Fence Estimator</a>
+        <a href="#craft" class="hover:text-forest-700 transition-colors">Steel Post Standards</a>
+      </nav>
+
+      <!-- Desktop Phone & CTA -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold text-slate-400 uppercase">Call Founders Direct:</span>
+          <a href="tel:6823689172" class="text-base font-extrabold text-slate-900 hover:text-forest-700 transition-colors flex items-center gap-1 justify-end">
+            <i data-lucide="phone" class="w-4 h-4 text-forest-700"></i> (682) 368-9172
+          </a>
+        </div>
+        <button onclick="document.getElementById('estimator').scrollIntoView({behavior: 'smooth'})" class="px-5 py-2.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="ruler" class="w-4 h-4 text-cedar-400"></i>
+          <span>Free On-Site Measure</span>
+        </button>
+      </div>
+
+      <!-- Mobile Call Now -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:6823689172" class="px-3 py-1.5 rounded-lg bg-forest-700 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="forest-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full min-w-0">
+        
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 w-full min-w-0">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest-500/15 border border-forest-500/30 text-emerald-300 text-[11px] sm:text-xs font-bold max-w-full">
+            <span class="w-2 h-2 rounded-full bg-cedar-400 shrink-0"></span>
+            <span class="truncate">DFW'S PREMIER CUSTOM CEDAR & IRON FENCE BUILDER</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
+            Built For Texas Storms.<br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-amber-300 block sm:inline">
+              Crafted For a Lifetime.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            North Texas high winds and humidity rot and tip cheap builder fences. Bourdon Fence Co. sets heavy commercial steel posts deep in concrete with premium pre-stained Western Red Cedar and hand-welded iron gates that never sag.
+          </p>
+
+          <!-- Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full min-w-0">
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="shield-check" class="w-4 h-4 text-cedar-400 shrink-0"></i>
+              <span>Steel Posts in Concrete</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="trees" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>#1 Western Red Cedar</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="heart-handshake" class="w-4 h-4 text-cedar-400 shrink-0"></i>
+              <span>Family Owned & Operated</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full min-w-0">
+            <a href="tel:6823689172" class="px-6 py-4 rounded-xl bg-gradient-to-r from-cedar-600 to-cedar-700 hover:from-cedar-700 hover:to-cedar-800 text-white font-extrabold text-base shadow-lg shadow-cedar-700/30 flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Call Direct: (682) 368-9172</span>
+            </a>
+            <button onclick="document.getElementById('estimator').scrollIntoView({behavior: 'smooth'})" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="calculator" class="w-5 h-5 text-emerald-400"></i>
+              <span>Instant Fence Estimator (60s)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column Card: Instant Fence Estimator Card -->
+        <div class="lg:col-span-5 w-full min-w-0" id="estimator">
+          <div class="bg-slate-900/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-forest-500/30 shadow-2xl space-y-4">
+            <div class="border-b border-slate-800 pb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-cedar-400">Instant Online Estimate</span>
+              <h3 class="text-lg font-black text-white">Custom Fence & Gate Pricing</h3>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300">
+              Select your specifications for an accurate ballpark quote and free laser property measurement:
+            </p>
+
+            <form onsubmit="alert('Thank you! Ryan & Brittany will review your fence project specifications and provide a detailed estimate within 2 business hours.'); return false;" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Select Project Style:</label>
+                <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-forest-500">
+                  <option>8-Foot Board-on-Board Cedar (Total Privacy + Top Cap)</option>
+                  <option>6-Foot Western Red Cedar Side-by-Side Privacy</option>
+                  <option>Ornamental Wrought Iron + Automated Driveway Gate</option>
+                  <option>Custom Pergola / Covered Patio Timber Structure</option>
+                  <option>Storm Wind Damage Complete Fence Replacement</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Estimated Linear Feet (Approx):</label>
+                <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-forest-500">
+                  <option>Small Repair / Single Line (30 - 75 Linear Ft)</option>
+                  <option>Standard Suburban Backyard (100 - 180 Linear Ft)</option>
+                  <option>Large Lot / Corner Property (200 - 350 Linear Ft)</option>
+                  <option>Acreage / Full Perimeter (350+ Linear Ft)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Homeowner Name:</label>
+                  <input type="text" required placeholder="Full name" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-forest-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Phone Number:</label>
+                  <input type="tel" required placeholder="(817) 000-0000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-forest-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Property City / Zip Code:</label>
+                <input type="text" required placeholder="e.g. Fort Worth, Keller, Arlington" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-forest-500">
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-forest-600 hover:bg-forest-700 text-white font-extrabold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-300"></i>
+                <span>Get My Custom Fence Estimate</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before / After Section -->
+  <section id="comparison" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold mb-3">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-forest-600"></i>
+          <span>ACTUAL JOBSITE WORK IN DFW</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Storm Damaged Pickets vs. Handcrafted Cedar
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Drag the slider to see how Bourdon replaces rotten pine builder fences with heavy-gauge galvanized steel posts, board-on-board cedar overlap, and commercial staining:
+        </p>
+      </div>
+
+      <!-- Comparison Slider Widget -->
+      <div class="max-w-4xl mx-auto bg-slate-900 rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-2xl border border-slate-800">
+        <div class="relative w-full aspect-[16/10] overflow-hidden rounded-xl sm:rounded-2xl select-none group cursor-ew-resize" id="sliderContainer">
+          
+          <!-- After Image (Background) -->
+          <img src="../assets/before_after/bourdon_after.jpg" alt="Brand new Western Red Cedar Board on Board Privacy Fence" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute bottom-4 right-4 bg-forest-900/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-emerald-500/30 text-white text-xs font-black shadow-lg flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> AFTER: Western Red Cedar Board-on-Board
+          </div>
+
+          <!-- Before Image (Clipped Overlay) -->
+          <div class="absolute inset-0 w-full h-full overflow-hidden" id="clippedBefore" style="width: 50%;">
+            <img src="../assets/before_after/bourdon_before.jpg" alt="Weathered rotten storm damaged wooden fence" class="absolute inset-0 w-full h-full object-cover max-w-none" id="beforeImg">
+            <div class="absolute bottom-4 left-4 bg-slate-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/20 text-white text-xs font-black shadow-lg flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-red-400"></span> BEFORE: Rotten Storm Damaged Fence
+            </div>
+          </div>
+
+          <!-- Drag Handle -->
+          <div class="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-2xl" id="dragLine" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-forest-600 text-white shadow-xl flex items-center justify-center border-2 border-white">
+              <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] sm:text-xs text-slate-400 mt-3 px-2">
+          <span>⟵ Drag left for Full After View</span>
+          <span class="font-bold text-slate-300">Touch or Drag Slider Anywhere</span>
+          <span>Drag right for Initial Damage View ⟶</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Bar for Mobile -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex items-center gap-2 md:hidden">
+    <a href="tel:6823689172" class="flex-1 py-3 px-4 rounded-xl bg-cedar-600 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span>Call (682) 368-9172</span>
+    </a>
+    <button onclick="document.getElementById('estimator').scrollIntoView({behavior: 'smooth'})" class="flex-1 py-3 px-4 rounded-xl bg-forest-600 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md">
+      <i data-lucide="ruler" class="w-4 h-4"></i>
+      <span>Free Estimate</span>
+    </button>
+  </div>
+
+  <script>
+    // Lucide Icons
+    lucide.createIcons();
+
+    // Before/After Slider Interaction
+    const container = document.getElementById('sliderContainer');
+    const clippedBefore = document.getElementById('clippedBefore');
+    const dragLine = document.getElementById('dragLine');
+    const beforeImg = document.getElementById('beforeImg');
+
+    function syncImgWidth() {
+      if (container && beforeImg) {
+        beforeImg.style.width = container.offsetWidth + 'px';
+      }
+    }
+    window.addEventListener('resize', syncImgWidth);
+    window.addEventListener('DOMContentLoaded', syncImgWidth);
+    syncImgWidth();
+
+    let isDown = false;
+    function updateSlider(xPos) {
+      const rect = container.getBoundingClientRect();
+      let offsetX = xPos - rect.left;
+      if (offsetX < 0) offsetX = 0;
+      if (offsetX > rect.width) offsetX = rect.width;
+      const pct = (offsetX / rect.width) * 100;
+      clippedBefore.style.width = pct + '%';
+      dragLine.style.left = pct + '%';
+    }
+
+    container.addEventListener('mousedown', () => isDown = true);
+    window.addEventListener('mouseup', () => isDown = false);
+    container.addEventListener('mousemove', (e) => {
+      if (isDown) updateSlider(e.clientX);
+    });
+    container.addEventListener('touchstart', (e) => {
+      isDown = true;
+      updateSlider(e.touches[0].clientX);
+    });
+    window.addEventListener('touchend', () => isDown = false);
+    container.addEventListener('touchmove', (e) => {
+      if (isDown) updateSlider(e.touches[0].clientX);
+    });
+    container.addEventListener('click', (e) => updateSlider(e.clientX));
+  </script>
+</body>
+</html>

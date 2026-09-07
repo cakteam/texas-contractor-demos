@@ -127,6 +127,54 @@ TARGET_PROFILES = {
             "Buried dispatch form costs emergency calls during peak North Texas heatwaves",
             "Doesn't prominently highlight TACLA 116949C state license & Generac certified generator capabilities on mobile"
         ]
+    },
+    "bourdonfence": {
+        "name": "Bourdon Fence Co. LLC",
+        "city": "Fort Worth & DFW, TX",
+        "recipient_name": "Ryan & Brittany Bourdon",
+        "recipient_email": "Bourdonfenceco@gmail.com",
+        "phone": "(682) 368-9172",
+        "current_url": "https://bourdonfenceco.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/bourdonfence/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "07_bourdon_mockup.png",
+        "subject": "Ryan & Brittany — quick idea on your mobile site (+ live concept for Bourdon Fence)",
+        "pain_points": [
+            "Heavy WordPress styling plugins slowing down mobile load times on cellular connections",
+            "No interactive 60-second fence footage and style pricing estimator for storm callers",
+            "Lacks an interactive Before/After slider highlighting rotten pine vs heavy-post Western Red Cedar"
+        ]
+    },
+    "rockwater": {
+        "name": "Rockwater Plumbing",
+        "city": "Fort Worth & Arlington, TX",
+        "recipient_name": "Rockwater Plumbing Team",
+        "recipient_email": "rockwaterplumbing@gmail.com",
+        "phone": "(817) 383-8782",
+        "current_url": "https://callrockwaterplumbing.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/rockwater/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "08_rockwater_mockup.png",
+        "subject": "Quick observation on callrockwaterplumbing.com (+ live mobile concept for you)",
+        "pain_points": [
+            "Extensive text paragraphs bury emergency dispatch options during urgent burst pipe situations",
+            "Lacks a 30-second emergency triage selector (Slab Leak / Pipe Burst / Sewer Backup) for immediate technician routing",
+            "Doesn't visually showcase non-invasive pipe relining vs breaking foundation concrete"
+        ]
+    },
+    "elevatedpool": {
+        "name": "Elevated Pool Remodeling",
+        "city": "Southlake, Keller, Fort Worth, TX",
+        "recipient_name": "Elevated Pool Remodeling Team",
+        "recipient_email": "Elevatedpoolremodeling@gmail.com",
+        "phone": "(817) 350-3519",
+        "current_url": "https://elevatedpoolremodel.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/elevatedpool/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "09_elevated_mockup.png",
+        "subject": "Critical technical note on elevatedpoolremodeling.com (+ built a luxury pool concept for you)",
+        "pain_points": [
+            "Primary domain elevatedpoolremodeling.com failing to connect with an SSL/server certificate error",
+            "Alternate site is a client-side JavaScript shell that can experience delays on mobile devices",
+            "Lacks an interactive luxury transformation slider comparing aged plaster to Midnight Pebble and travertine"
+        ]
     }
 }
 
@@ -331,7 +379,7 @@ def send_email(target_key, test_recipient=None, dry_run=True, force_send=False):
 
 def main():
     parser = argparse.ArgumentParser(description="Commercial Outreach Email Dispatcher via Gmail")
-    parser.add_argument("--target", choices=["goodroots", "amatttree", "dapco", "duckac", "ameritex", "calldadac"], default="goodroots",
+    parser.add_argument("--target", choices=["goodroots", "amatttree", "dapco", "duckac", "ameritex", "calldadac", "bourdonfence", "rockwater", "elevatedpool"], default="goodroots",
                         help="Target business profile to send")
     parser.add_argument("--test-to", type=str, default=None,
                         help="Send a live test to your own inbox to preview on your phone")

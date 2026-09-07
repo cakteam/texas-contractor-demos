@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Rockwater Plumbing | Fort Worth & Arlington, TX | 24/7 Emergency Plumbing & Slab Leaks</title>
+  <meta name="description" content="Fort Worth & Arlington's top-rated 24/7 emergency plumbers. Electronic slab leak detection, water heater replacements, and trenchless sewer repair. Call (817) 383-8782.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plumb: {
+              950: '#071626',
+              900: '#0d233a',
+              800: '#143658',
+              700: '#1a4c7a',
+              600: '#2369a4',
+              500: '#38bdf8',
+              100: '#e0f2fe',
+              50: '#f0f9ff'
+            },
+            coral: {
+              600: '#dc2626',
+              500: '#ef4444',
+              400: '#f87171'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    img, video { max-width: 100%; height: auto; }
+    .plumb-pattern {
+      background-color: #071626;
+      background-image: radial-gradient(rgba(56, 189, 248, 0.15) 1px, transparent 1px), radial-gradient(rgba(220, 38, 38, 0.1) 1px, #071626 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top Emergency Ticker -->
+  <div class="bg-coral-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-semibold border-b border-coral-700 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 w-full min-w-0">
+      <div class="flex items-center gap-1.5 min-w-0 flex-1">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-white animate-ping"></span>
+        <span class="font-black shrink-0 tracking-wide uppercase text-[10px] sm:text-xs">24/7 Live Emergency Dispatch:</span>
+        <span class="truncate text-red-50 text-[10px] sm:text-xs">Burst pipes, slab leaks & sewer backups active in Fort Worth & Arlington.</span>
+      </div>
+      <a href="tel:8173838782" class="shrink-0 flex items-center gap-1 font-extrabold text-white hover:text-red-200 transition-colors text-xs sm:text-sm">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+        <span class="font-black">(817) 383-8782</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-plumb-900 to-plumb-700 flex items-center justify-center text-white shrink-0 shadow-md">
+          <i data-lucide="droplet" class="w-6 h-6 text-plumb-500"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-black tracking-tight text-slate-950 truncate flex items-center gap-1">
+            ROCKWATER <span class="text-plumb-600 font-extrabold text-xs sm:text-sm">PLUMBING</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">Fort Worth & Arlington • Texas Master Plumber</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-plumb-700 transition-colors">Emergency Plumbing</a>
+        <a href="#comparison" class="hover:text-plumb-700 transition-colors">Camera Inspection</a>
+        <a href="#triage" class="hover:text-plumb-700 transition-colors">30s Dispatch</a>
+        <a href="#slableak" class="hover:text-plumb-700 transition-colors">Slab Leak Reroutes</a>
+      </nav>
+
+      <!-- Desktop Phone & CTA -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold text-slate-400 uppercase">On-Call Master Plumber:</span>
+          <a href="tel:8173838782" class="text-base font-extrabold text-slate-900 hover:text-plumb-700 transition-colors flex items-center gap-1 justify-end">
+            <i data-lucide="phone" class="w-4 h-4 text-plumb-700"></i> (817) 383-8782
+          </a>
+        </div>
+        <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="px-5 py-2.5 rounded-xl bg-coral-600 hover:bg-coral-700 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="alert-triangle" class="w-4 h-4 text-white"></i>
+          <span>Emergency Dispatch</span>
+        </button>
+      </div>
+
+      <!-- Mobile Call Now -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:8173838782" class="px-3 py-1.5 rounded-lg bg-coral-600 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="plumb-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full min-w-0">
+        
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 w-full min-w-0">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plumb-500/15 border border-plumb-500/30 text-sky-300 text-[11px] sm:text-xs font-bold max-w-full">
+            <span class="w-2 h-2 rounded-full bg-coral-500 shrink-0 animate-pulse"></span>
+            <span class="truncate">24/7 EMERGENCY PLUMBING DISPATCH • FORT WORTH & TARRANT COUNTY</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
+            Plumbing Emergencies<br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-200 to-coral-400 block sm:inline">
+              Solved in 60 Minutes.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            When a high-pressure pipe snaps or warm water leaks through your foundation slab, Rockwater Plumbing stops water damage fast. Upfront flat pricing, certified leak detection, and zero hidden night fees.
+          </p>
+
+          <!-- Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full min-w-0">
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="badge-check" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span>Licensed Master Plumber</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="scan-eye" class="w-4 h-4 text-coral-400 shrink-0"></i>
+              <span>Electronic Slab Leak Camera</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="clock" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span>60-Min Target Arrival</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full min-w-0">
+            <a href="tel:8173838782" class="px-6 py-4 rounded-xl bg-gradient-to-r from-coral-600 to-coral-700 hover:from-coral-700 hover:to-coral-800 text-white font-extrabold text-base shadow-lg shadow-coral-700/30 flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Call Direct: (817) 383-8782</span>
+            </a>
+            <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="wrench" class="w-5 h-5 text-sky-400"></i>
+              <span>Book Plumbing Dispatch (30s)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column Card: Emergency Dispatch Triage Card -->
+        <div class="lg:col-span-5 w-full min-w-0" id="triage">
+          <div class="bg-slate-900/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-plumb-500/30 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-coral-400">Priority Response</span>
+                <h3 class="text-lg font-black text-white">Emergency Plumbing Dispatch</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Tech On Duty
+              </span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300">
+              Select your emergency symptom for immediate routing to our on-call Fort Worth truck:
+            </p>
+
+            <form onsubmit="alert('Emergency request received! Our on-call Fort Worth master plumber is reviewing your dispatch and will call within 10 minutes.'); return false;" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Select Plumbing Emergency:</label>
+                <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-plumb-500">
+                  <option>Active Pipe Burst / Water Leaking Through Ceiling</option>
+                  <option>Slab Leak Suspected (Warm Floors / Spinning Water Meter)</option>
+                  <option>Water Heater Leaking / Zero Hot Water</option>
+                  <option>Main Sewer Line Backup (Multiple Drains Clogged)</option>
+                  <option>Gas Line Smell / Urgent Pressure Test</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Your Property Address / Zip Code:</label>
+                <input type="text" required placeholder="e.g. Fort Worth, Arlington, 76109" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-plumb-500">
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Contact Name:</label>
+                  <input type="text" required placeholder="Homeowner name" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-plumb-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Phone Number:</label>
+                  <input type="tel" required placeholder="(817) 000-0000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-plumb-500">
+                </div>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-coral-600 hover:bg-coral-700 text-white font-extrabold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Dispatch Tech to My Home Now</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before / After Section -->
+  <section id="comparison" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold mb-3">
+          <i data-lucide="camera" class="w-3.5 h-3.5 text-plumb-600"></i>
+          <span>FIELD CAMERA DIAGNOSTICS</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Clogged Root Infiltration vs. Hydro-Jetted Relined Pipe
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Drag the slider to see how Rockwater removes severe root chokes and restores full flow without breaking up your concrete foundation:
+        </p>
+      </div>
+
+      <!-- Comparison Slider Widget -->
+      <div class="max-w-4xl mx-auto bg-slate-900 rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-2xl border border-slate-800">
+        <div class="relative w-full aspect-[16/10] overflow-hidden rounded-xl sm:rounded-2xl select-none group cursor-ew-resize" id="sliderContainer">
+          
+          <!-- After Image (Background) -->
+          <img src="../assets/before_after/rockwater_after.jpg" alt="Restored clean copper piping and water heater" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute bottom-4 right-4 bg-plumb-900/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-sky-500/30 text-white text-xs font-black shadow-lg flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> AFTER: Precision Hydro-Cleaned & Calibrated
+          </div>
+
+          <!-- Before Image (Clipped Overlay) -->
+          <div class="absolute inset-0 w-full h-full overflow-hidden" id="clippedBefore" style="width: 50%;">
+            <img src="../assets/before_after/rockwater_before.jpg" alt="Corroded leaking copper pipes" class="absolute inset-0 w-full h-full object-cover max-w-none" id="beforeImg">
+            <div class="absolute bottom-4 left-4 bg-slate-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/20 text-white text-xs font-black shadow-lg flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-coral-400"></span> BEFORE: Corroded Leaking Joint
+            </div>
+          </div>
+
+          <!-- Drag Handle -->
+          <div class="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-2xl" id="dragLine" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-coral-600 text-white shadow-xl flex items-center justify-center border-2 border-white">
+              <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] sm:text-xs text-slate-400 mt-3 px-2">
+          <span>⟵ Drag left for Restored View</span>
+          <span class="font-bold text-slate-300">Touch or Drag Slider Anywhere</span>
+          <span>Drag right for Initial Leak View ⟶</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Bar for Mobile -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex items-center gap-2 md:hidden">
+    <a href="tel:8173838782" class="flex-1 py-3 px-4 rounded-xl bg-coral-600 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span>Call (817) 383-8782</span>
+    </a>
+    <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="flex-1 py-3 px-4 rounded-xl bg-plumb-600 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md">
+      <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+      <span>Dispatch Tech</span>
+    </button>
+  </div>
+
+  <script>
+    // Lucide Icons
+    lucide.createIcons();
+
+    // Before/After Slider Interaction
+    const container = document.getElementById('sliderContainer');
+    const clippedBefore = document.getElementById('clippedBefore');
+    const dragLine = document.getElementById('dragLine');
+    const beforeImg = document.getElementById('beforeImg');
+
+    function syncImgWidth() {
+      if (container && beforeImg) {
+        beforeImg.style.width = container.offsetWidth + 'px';
+      }
+    }
+    window.addEventListener('resize', syncImgWidth);
+    window.addEventListener('DOMContentLoaded', syncImgWidth);
+    syncImgWidth();
+
+    let isDown = false;
+    function updateSlider(xPos) {
+      const rect = container.getBoundingClientRect();
+      let offsetX = xPos - rect.left;
+      if (offsetX < 0) offsetX = 0;
+      if (offsetX > rect.width) offsetX = rect.width;
+      const pct = (offsetX / rect.width) * 100;
+      clippedBefore.style.width = pct + '%';
+      dragLine.style.left = pct + '%';
+    }
+
+    container.addEventListener('mousedown', () => isDown = true);
+    window.addEventListener('mouseup', () => isDown = false);
+    container.addEventListener('mousemove', (e) => {
+      if (isDown) updateSlider(e.clientX);
+    });
+    container.addEventListener('touchstart', (e) => {
+      isDown = true;
+      updateSlider(e.touches[0].clientX);
+    });
+    window.addEventListener('touchend', () => isDown = false);
+    container.addEventListener('touchmove', (e) => {
+      if (isDown) updateSlider(e.touches[0].clientX);
+    });
+    container.addEventListener('click', (e) => updateSlider(e.clientX));
+  </script>
+</body>
+</html>
