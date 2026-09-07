@@ -17,6 +17,26 @@
 
 ---
 
+## 1.2 第二批（Wave 2）触达明细 (已送达)
+
+| 目标商家 | 行业与区域 | 收件地址 | 主题行 (Subject Line) | 演示站点 (Live URL) | 邮件视觉钩子 (Inline CID) | 发送状态 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Duck AC & Heating** | 紧急空调与暖通<br>(Arlington & Mansfield) | `info@duckacandheating.com` | `Quick heads-up about a mobile calling issue on duckacandheating.com (+ live concept)` | [Duck AC Demo](https://cakteam.github.io/texas-contractor-demos/duckac/) | `04_duck_ac_mockup.png`<br>*(218 KB 高清真机)* | **✅ SUCCESS (已送达)** |
+| **AmeriTex Foundation Repair** | 地基沉降钢桩加固<br>(Keller & Fort Worth) | `AmeriTexFoundationRepair@gmail.com` | `Quick note on your mobile site + built a custom steel pier prototype for AmeriTex` | [AmeriTex Demo](https://cakteam.github.io/texas-contractor-demos/ameritex/) | `05_ameritex_mockup.png`<br>*(243 KB 高清真机)* | **✅ SUCCESS (已送达)** |
+| **D.A.D. Home Services** | 全屋暖通与应急发电机<br>(Arlington & DFW) | `david@calldadac.com` | `David — quick thought on calldadac.com mobile speed (+ live prototype for you)` | [D.A.D. Demo](https://cakteam.github.io/texas-contractor-demos/calldadac/) | `06_dad_mockup.png`<br>*(226 KB 高清真机)* | **✅ SUCCESS (已送达)** |
+
+---
+
+## 1.3 第三批（Wave 3）新拓展高客单承包商 (已完成部署待发送)
+
+| 目标商家 | 行业与客单价 | 收件地址 | 主题行 (Subject Line) | 演示站点 (Live URL) | 邮件视觉钩子 (Inline CID) | 状态 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Bourdon Fence Co. LLC** | 定制红雪松与铁艺围栏<br>(\$5k-\$15k) | `Bourdonfenceco@gmail.com` | `Ryan & Brittany — quick idea on your mobile site (+ live concept for Bourdon Fence)` | [Bourdon Fence Demo](https://cakteam.github.io/texas-contractor-demos/bourdonfence/) | `07_bourdon_mockup.png`<br>*(225 KB 高清真机)* | **READY (已就绪)** |
+| **Rockwater Plumbing** | 24小时紧急水管与暗管探测<br>(\$3k-\$18k) | `rockwaterplumbing@gmail.com` | `Quick observation on callrockwaterplumbing.com (+ live mobile concept for you)` | [Rockwater Demo](https://cakteam.github.io/texas-contractor-demos/rockwater/) | `08_rockwater_mockup.png`<br>*(211 KB 高清真机)* | **READY (已就绪)** |
+| **Elevated Pool Remodeling** | 奢华石英泳池翻新与石灰华石铺贴<br>(\$15k-\$65k) | `Elevatedpoolremodeling@gmail.com` | `Critical technical note on elevatedpoolremodeling.com (+ built a luxury pool concept for you)` | [Elevated Pool Demo](https://cakteam.github.io/texas-contractor-demos/elevatedpool/) | `09_elevated_mockup.png`<br>*(231 KB 高清真机)* | **READY (已就绪)** |
+
+---
+
 ## 2. 用户自测验证记录
 - **自测收件箱**：`bieke609@gmail.com`
 - **自测主题**：`Quick heads-up about a formatting glitch on goodrootsroofing.com (+ live concept for you)`
