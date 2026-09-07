@@ -59,15 +59,15 @@
 
   <!-- Top License Ticker -->
   <div class="bg-dadBrand-950 text-sky-200 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-dadBrand-800 w-full overflow-hidden">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
-      <div class="flex items-center gap-1.5 min-w-0 truncate">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 w-full min-w-0">
+      <div class="flex items-center gap-1.5 min-w-0 flex-1">
         <span class="flex h-2 w-2 shrink-0 rounded-full bg-orange-400 animate-ping"></span>
-        <span class="font-black text-orange-400 shrink-0">State of Texas TACLA 116949C:</span>
-        <span class="truncate text-slate-300">Licensed & Insured HVAC, Air Quality & Backup Generators across Dallas & Arlington.</span>
+        <span class="font-black text-orange-400 shrink-0 text-[10px] sm:text-xs">Texas TACLA 116949C:</span>
+        <span class="truncate text-slate-300 text-[10px] sm:text-xs">Licensed HVAC & Generator Dispatch across Dallas & DFW.</span>
       </div>
-      <a href="tel:6823283700" class="shrink-0 flex items-center gap-1 font-extrabold text-orange-400 hover:text-white transition-colors">
+      <a href="tel:6823283700" class="shrink-0 flex items-center gap-1 font-extrabold text-orange-400 hover:text-white transition-colors text-xs sm:text-sm">
         <i data-lucide="phone" class="w-3 h-3"></i>
-        <span class="text-xs sm:text-sm font-bold">(682) 328-3700</span>
+        <span class="font-bold">(682) 328-3700</span>
       </a>
     </div>
   </div>
@@ -123,18 +123,18 @@
   <!-- Hero Section -->
   <section class="dad-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full min-w-0">
         
         <!-- Text Column -->
-        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-dadBrand-500/15 border border-dadBrand-500/30 text-sky-300 text-xs font-bold max-w-full truncate">
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 w-full min-w-0">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dadBrand-500/15 border border-dadBrand-500/30 text-sky-300 text-[11px] sm:text-xs font-bold max-w-full">
             <span class="w-2 h-2 rounded-full bg-orange-400 shrink-0 animate-pulse"></span>
-            <span class="truncate">DALLAS & ARLINGTON EMERGENCY COOLING & GENERATOR EXPERTS</span>
+            <span class="truncate">DFW EMERGENCY COOLING & GENERATOR EXPERTS</span>
           </div>
 
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
-            Call D.A.D. When You Need<br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-orange-400">
+          <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
+            Call D.A.D. When You Need<br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-orange-400 block sm:inline">
               Comfort Done Right.
             </span>
           </h1>
@@ -144,7 +144,7 @@
           </p>
 
           <!-- Badges -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full min-w-0">
             <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
               <i data-lucide="badge-check" class="w-4 h-4 text-orange-400 shrink-0"></i>
               <span>State Licensed TACLA 116949C</span>
@@ -160,7 +160,7 @@
           </div>
 
           <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full min-w-0">
             <a href="tel:6823283700" class="px-6 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-extrabold text-base shadow-lg shadow-orange-600/30 flex items-center justify-center gap-2 transition-all">
               <i data-lucide="phone-call" class="w-5 h-5"></i>
               <span>Call David: (682) 328-3700</span>
@@ -173,7 +173,7 @@
         </div>
 
         <!-- Right Column Card: Dispatch Form -->
-        <div class="lg:col-span-5" id="triage">
+        <div class="lg:col-span-5 w-full min-w-0" id="triage">
           <div class="bg-slate-900/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-dadBrand-500/30 shadow-2xl space-y-4">
             <div class="border-b border-slate-800 pb-3">
               <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Priority Service Channel</span>
@@ -243,14 +243,14 @@
       <!-- Before/After Slider Container -->
       <div class="ba-slider-container relative w-full h-[320px] sm:h-[480px] rounded-2xl sm:rounded-3xl overflow-hidden select-none border border-slate-700 shadow-2xl group cursor-ew-resize">
         <!-- AFTER: Precision Calibrated Indoor Installation -->
-        <img src="../../assets/before_after/dad_after.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="After: Precision Indoor Mini-Split & Air Handler Calibrated">
+        <img src="../assets/before_after/dad_after.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="After: Precision Indoor Mini-Split & Air Handler Calibrated">
         <div class="absolute top-4 right-4 z-10 bg-dadBrand-700/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-dadBrand-400/40">
           DELIVERY: Precision Indoor System Calibration & Multi-Point Certification
         </div>
 
         <!-- BEFORE: Electrical Diagnostics -->
         <div class="ba-before-wrap absolute inset-y-0 left-0 w-1/2 overflow-hidden border-r-2 border-white shadow-[0_0_25px_rgba(0,0,0,0.8)] z-10">
-          <img src="../../assets/before_after/dad_before.jpg" class="ba-before-img absolute top-0 left-0 max-w-none h-full object-cover pointer-events-none" alt="Before: Outdoor Condenser Electrical Multimeter Testing">
+          <img src="../assets/before_after/dad_before.jpg" class="ba-before-img absolute top-0 left-0 max-w-none h-full object-cover pointer-events-none" alt="Before: Outdoor Condenser Electrical Multimeter Testing">
           <div class="absolute top-4 left-4 z-10 bg-slate-950/90 backdrop-blur-md text-orange-400 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-orange-500/40">
             DIAGNOSIS: Electrical Terminal & Compressor Multimeter Testing
           </div>
