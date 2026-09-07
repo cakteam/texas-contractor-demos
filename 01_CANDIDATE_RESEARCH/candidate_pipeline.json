@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Veritas Roofing",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://veritasroofingtx.com",
+    "status": "Eliminated - Cloudflare / Bot Wall",
+    "status_code": 403,
+    "cms": "Custom/Static",
+    "has_viewport": false,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "Missing mobile viewport tag (terrible mobile UX)",
+      "No click-to-call tel: links (friction for mobile users)",
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Site protected by heavy enterprise CDN/WAF. Not a simple local owner-operator website update."
+  },
+  {
+    "name": "Lon Smith Roofing & Construction",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://www.lonsmith.com",
+    "status": "Eliminated - Already Modern / Large Enterprise",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Company already has a mature, heavily optimized multi-page WordPress website with modern lead capture and dedicated marketing team. Hard to sell web redesign."
+  },
+  {
+    "name": "Tarrant Roofing",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://tarrantroofing.com",
+    "status": "Eliminated - Already Modern / Large Enterprise",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Company already has a mature, heavily optimized multi-page WordPress website with modern lead capture and dedicated marketing team. Hard to sell web redesign."
+  },
+  {
+    "name": "Veteran Brothers Roofing & Restoration",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://veteranbros.com",
+    "status": "Eliminated - Already Modern / Large Enterprise",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Company already has a mature, heavily optimized multi-page WordPress website with modern lead capture and dedicated marketing team. Hard to sell web redesign."
+  },
+  {
+    "name": "3:16 Roofing and Construction",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Keller / Fort Worth, TX",
+    "url": "https://316roofing.com",
+    "status": "Qualified Contender - Tier 2",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Good viable candidate with outdated layout, but Top 3 selections exhibit significantly more dramatic conversion leaks and clearer sales angles."
+  },
+  {
+    "name": "Old Pro Roofing",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://oldproroofing.com",
+    "status": "Qualified Contender - Tier 2",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Good viable candidate with outdated layout, but Top 3 selections exhibit significantly more dramatic conversion leaks and clearer sales angles."
+  },
+  {
+    "name": "High Pointe Roofing and Construction",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://highpointeroofing.com",
+    "status": "Eliminated - Inaccessible / Technical Deadlock",
+    "status_code": null,
+    "cms": "Custom/Static",
+    "has_viewport": false,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio"
+    ],
+    "selection_rationale": "Domain unreachable or SSL protocol violation: Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio. High risk of dormant or disconnected business."
+  },
+  {
+    "name": "S&B Roofing & Exteriors",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://sbroofing.com",
+    "status": "Qualified Contender - Tier 2",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Good viable candidate with outdated layout, but Top 3 selections exhibit significantly more dramatic conversion leaks and clearer sales angles."
+  },
+  {
+    "name": "A. Matt Tree Service",
+    "niche": "Tree Removal & Arborist",
+    "city": "Fort Worth, TX",
+    "url": "https://amatt-treeservice.com",
+    "status": "Selected - Top 3 Finalist",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "20+ years family owned, 4.9 stars (99+ reviews), heavy equipment owner-operator. Website is stuck in 2013 on WordPress 'Tempera' with 'Comments are closed' and snow-plowing banners. High-ticket storm removal jobs ($1.5k-$6k)."
+  },
+  {
+    "name": "Integrity Tree Care",
+    "niche": "Tree Removal & Arborist",
+    "city": "Fort Worth, TX",
+    "url": "https://integritytreecare.org",
+    "status": "Eliminated - Secondary Candidate",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": false,
+    "has_form": true,
+    "issues": [
+      "No click-to-call tel: links (friction for mobile users)"
+    ],
+    "selection_rationale": "Lacks urgent commercial trigger or has lower ticket size."
+  },
+  {
+    "name": "Texas Tree Surgeons",
+    "niche": "Tree Removal & Arborist",
+    "city": "Dallas / Fort Worth, TX",
+    "url": "https://texastreesurgeons.com",
+    "status": "Eliminated - Already Modern / Large Enterprise",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Company already has a mature, heavily optimized multi-page WordPress website with modern lead capture and dedicated marketing team. Hard to sell web redesign."
+  },
+  {
+    "name": "Uncle Bob's Garage Door Service",
+    "niche": "Garage Door Repair & Install",
+    "city": "Fort Worth / Arlington, TX",
+    "url": "https://unclebobsgaragedoorservice.com",
+    "status": "Qualified Contender - Tier 2",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Good viable candidate with outdated layout, but Top 3 selections exhibit significantly more dramatic conversion leaks and clearer sales angles."
+  },
+  {
+    "name": "Dapco Door",
+    "niche": "Garage Door Repair & Install",
+    "city": "Grand Prairie / Arlington, TX",
+    "url": "https://dapcodoor.com",
+    "status": "Selected - Top 3 Finalist",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": false,
+    "has_form": true,
+    "issues": [
+      "No click-to-call tel: links (friction for mobile users)"
+    ],
+    "selection_rationale": "15+ years in business, 5.0 star Google rating, 24/7 emergency repair. Website has embarrassing public conversion leaks: main 'Reviews' nav link leads to 404 error, Facebook widget displays broken OAuth error code, H1 is raw phone number."
+  },
+  {
+    "name": "Family Christian Doors",
+    "niche": "Garage Door Repair & Install",
+    "city": "Arlington, TX",
+    "url": "https://familychristiandoors.com",
+    "status": "Eliminated - Secondary Candidate",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage",
+      "Uses legacy HTML tables for layout"
+    ],
+    "selection_rationale": "Lacks urgent commercial trigger or has lower ticket size."
+  },
+  {
+    "name": "Garage & Gate Service Pros",
+    "niche": "Garage Door Repair & Install",
+    "city": "Grand Prairie, TX",
+    "url": "https://garageservicepros.com",
+    "status": "Eliminated - Secondary Candidate",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Lacks urgent commercial trigger or has lower ticket size."
+  },
+  {
+    "name": "Garage Door Medics",
+    "niche": "Garage Door Repair & Install",
+    "city": "Fort Worth / Dallas, TX",
+    "url": "https://gdmedics.com",
+    "status": "Eliminated - Mature Regional Player",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Established multi-location brand with full corporate marketing stack. Low owner-direct outbound conversion."
+  },
+  {
+    "name": "Precision Garage Door Fort Worth",
+    "niche": "Garage Door Repair & Install",
+    "city": "Fort Worth, TX",
+    "url": "https://precisiondoorfortworth.com",
+    "status": "Eliminated - Mature Regional Player",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Established multi-location brand with full corporate marketing stack. Low owner-direct outbound conversion."
+  },
+  {
+    "name": "Structured Foundation Repairs",
+    "niche": "Foundation Repair & Drainage",
+    "city": "Dallas / Fort Worth, TX",
+    "url": "https://structuredfoundation.com",
+    "status": "Eliminated - Already Modern / Large Enterprise",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": true,
+    "issues": [],
+    "selection_rationale": "Company already has a mature, heavily optimized multi-page WordPress website with modern lead capture and dedicated marketing team. Hard to sell web redesign."
+  },
+  {
+    "name": "Advanced Foundation Repair",
+    "niche": "Foundation Repair & Drainage",
+    "city": "Dallas / Fort Worth, TX",
+    "url": "https://foundationrepairs.com",
+    "status": "Eliminated - Cloudflare / Bot Wall",
+    "status_code": 403,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "No click-to-call tel: links (friction for mobile users)",
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Site protected by heavy enterprise CDN/WAF. Not a simple local owner-operator website update."
+  },
+  {
+    "name": "Hargrave Foundation Repair",
+    "niche": "Foundation Repair & Drainage",
+    "city": "Dallas / Fort Worth, TX",
+    "url": "https://hargraveinc.com",
+    "status": "Qualified Contender - Tier 2",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Good viable candidate with outdated layout, but Top 3 selections exhibit significantly more dramatic conversion leaks and clearer sales angles."
+  },
+  {
+    "name": "Coolinary Arts Heating & Cooling",
+    "niche": "HVAC & AC Repair",
+    "city": "Dallas, TX",
+    "url": "https://coolinaryarts.com",
+    "status": "Eliminated - Inaccessible / Technical Deadlock",
+    "status_code": null,
+    "cms": "Custom/Static",
+    "has_viewport": false,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio"
+    ],
+    "selection_rationale": "Domain unreachable or SSL protocol violation: Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio. High risk of dormant or disconnected business."
+  },
+  {
+    "name": "Total Air & Heat Co.",
+    "niche": "HVAC & AC Repair",
+    "city": "Plano / Dallas, TX",
+    "url": "https://totalair.com",
+    "status": "Eliminated - Mature Regional Player",
+    "status_code": 200,
+    "cms": "WordPress",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Established multi-location brand with full corporate marketing stack. Low owner-direct outbound conversion."
+  },
+  {
+    "name": "Texas Air Doctors",
+    "niche": "HVAC & AC Repair",
+    "city": "Fort Worth / Arlington, TX",
+    "url": "https://texasairdoctors.com",
+    "status": "Eliminated - Mature Regional Player",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Established multi-location brand with full corporate marketing stack. Low owner-direct outbound conversion."
+  },
+  {
+    "name": "Chandler Roofing & Construction",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://chandlerroofing.com",
+    "status": "Eliminated - Secondary Candidate",
+    "status_code": 200,
+    "cms": "Custom/Static",
+    "has_viewport": false,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "Missing mobile viewport tag (terrible mobile UX)",
+      "No click-to-call tel: links (friction for mobile users)",
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "Lacks urgent commercial trigger or has lower ticket size."
+  },
+  {
+    "name": "Good Roots Roofing & Construction",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://goodrootsroofing.com",
+    "status": "Selected - Top 3 Finalist",
+    "status_code": 200,
+    "cms": "GoDaddy Builder",
+    "has_viewport": true,
+    "has_tel": true,
+    "has_form": false,
+    "issues": [
+      "No lead capture / quote form on homepage"
+    ],
+    "selection_rationale": "BBB Accredited (A rating), high-ticket roofing ($8k-$20k), active business in Fort Worth. Website is a catastrophic GoDaddy builder error repeating brand name 9x and slogan 8x, zero quote capture, missing images. Huge ROI upside."
+  },
+  {
+    "name": "Tarrant County Roofing",
+    "niche": "Roofing & Storm Restoration",
+    "city": "Fort Worth, TX",
+    "url": "https://tarrantcountyroofing.com",
+    "status": "Eliminated - Inaccessible / Technical Deadlock",
+    "status_code": null,
+    "cms": "Custom/Static",
+    "has_viewport": false,
+    "has_tel": false,
+    "has_form": false,
+    "issues": [
+      "Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio"
+    ],
+    "selection_rationale": "Domain unreachable or SSL protocol violation: Connection failed / domain issue: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio. High risk of dormant or disconnected business."
+  }
+]

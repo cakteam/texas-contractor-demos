@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>A. Matt Tree Service | Fort Worth & Keller, TX | 20+ Years Family-Owned Arborist</title>
+  <meta name="description" content="Fort Worth & Keller's top-rated tree removal and trimming specialists. 4.9 stars, 20+ years in business, 24/7 emergency storm removal, licensed & $2M insured.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              950: '#032014',
+              900: '#064e3b',
+              800: '#065f46',
+              700: '#047857',
+              600: '#059669',
+              500: '#10b981',
+              100: '#d1fae5',
+              50: '#f0fdf4'
+            },
+            amberBrand: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .tree-pattern {
+      background-color: #032014;
+      background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px), radial-gradient(rgba(4, 120, 87, 0.15) 1px, #032014 1px);
+      background-size: 36px 36px;
+      background-position: 0 0, 18px 18px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top Emergency Ticker -->
+  <div class="bg-forest-950 text-emerald-300 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-emerald-900/60 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5 min-w-0 truncate">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-amber-400 animate-ping"></span>
+        <span class="font-bold text-amber-400 shrink-0">Storm Response:</span>
+        <span class="truncate text-slate-300">Hazardous tree fallen on roof or driveway? 24/7 crane crews on standby.</span>
+      </div>
+      <a href="tel:8173918899" class="shrink-0 flex items-center gap-1 font-extrabold text-amber-400 hover:text-white transition-colors">
+        <i data-lucide="phone" class="w-3 h-3"></i>
+        <span class="text-xs font-bold">(817) 391-8899</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-forest-800 to-forest-950 flex items-center justify-center text-amber-400 shrink-0 shadow">
+          <i data-lucide="trees" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-black tracking-tight text-slate-950 truncate flex items-center gap-1">
+            A. MATT <span class="text-forest-700 font-bold text-xs sm:text-sm">TREE SERVICE</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">Fort Worth & Keller • 20+ Years Family-Owned</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-forest-700 transition-colors">Services</a>
+        <a href="#estimator" class="hover:text-forest-700 transition-colors">Instant Estimator</a>
+        <a href="#reviews" class="hover:text-forest-700 transition-colors">Reviews (4.9★)</a>
+        <a href="#areas" class="hover:text-forest-700 transition-colors">Service Areas</a>
+      </nav>
+
+      <!-- Desktop Phone & CTA -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold text-slate-400 uppercase">Speak with Allen Matthews:</span>
+          <a href="tel:8173918899" class="text-base font-extrabold text-slate-900 hover:text-forest-700 transition-colors">
+            (817) 391-8899
+          </a>
+        </div>
+        <button onclick="openEstimatorModal()" class="px-5 py-2.5 rounded-lg bg-forest-800 hover:bg-forest-900 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="camera" class="w-4 h-4 text-amber-400"></i>
+          <span>Photo Quote</span>
+        </button>
+      </div>
+
+      <!-- Mobile Button -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:8173918899" class="px-2.5 py-1.5 rounded-lg bg-forest-800 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="tree-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Text -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-bold max-w-full truncate">
+            <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+            <span class="truncate">OVER 20 YEARS SERVING FORT WORTH, KELLER & SOUTHLAKE</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight break-words">
+            Heavy-Tree Removals.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-300">
+              Spotless Clean Yards.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            Led by Allen Matthews and foreman Daniel, A. Matt Tree Service has tackled Tarrant County's toughest tree jobs for over two decades. Equipped with cranes, bucket trucks, and stump grinders for safe, zero-damage removals.
+          </p>
+
+          <!-- Badges (Stack clean on mobile, grid on desktop) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-1 w-full">
+            <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <span class="text-amber-400 font-black text-sm">4.9 ★</span>
+              <span>99+ Verified Reviews</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>$2M Commercial Insured</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="truck" class="w-4 h-4 text-amber-400 shrink-0"></i>
+              <span>Crane & Bucket Fleet</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 pt-2 w-full">
+            <button onclick="openEstimatorModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-sm shadow-xl shadow-amber-950/50 transition-all flex items-center justify-center gap-2 group">
+              <i data-lucide="camera" class="w-4 h-4"></i>
+              <span>Upload Photo for Fast Quote</span>
+            </button>
+            <a href="tel:8173918899" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+              <span>Direct: (817) 391-8899</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Estimator Card -->
+        <div class="lg:col-span-5 w-full">
+          <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-5 sm:p-8 border border-slate-100 w-full overflow-hidden">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-black text-slate-900">Quick Tree Job Quote</h3>
+                <p class="text-xs text-slate-500">Same-day estimate from Allen Matthews</p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold shrink-0">
+                Free Estimate
+              </span>
+            </div>
+
+            <form id="heroTreeForm" onsubmit="handleTreeSubmit(event)" class="space-y-3">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Service Needed</label>
+                <select id="treeService" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-forest-600 focus:outline-none">
+                  <option value="Emergency Storm Hazard">🚨 Emergency Tree Removal (Storm / Leaning)</option>
+                  <option value="Full Tree Removal">Full Tree Removal (Cranes / High Risk)</option>
+                  <option value="Precision Tree Trimming">Tree Trimming & Canopy Thinning</option>
+                  <option value="Stump Grinding">Stump Grinding & Root Clean Out</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Tree Height / Size</label>
+                <div class="grid grid-cols-3 gap-2">
+                  <label class="cursor-pointer border border-slate-200 rounded-lg p-2 text-center hover:border-forest-600 has-[:checked]:border-forest-700 has-[:checked]:bg-emerald-50 transition-all">
+                    <input type="radio" name="treeSize" value="Small" class="sr-only">
+                    <span class="block text-xs font-bold">Small</span>
+                    <span class="block text-[10px] text-slate-500">&lt; 20 ft</span>
+                  </label>
+                  <label class="cursor-pointer border border-slate-200 rounded-lg p-2 text-center hover:border-forest-600 has-[:checked]:border-forest-700 has-[:checked]:bg-emerald-50 transition-all">
+                    <input type="radio" name="treeSize" value="Medium" checked class="sr-only">
+                    <span class="block text-xs font-bold">Medium</span>
+                    <span class="block text-[10px] text-slate-500">20-45 ft</span>
+                  </label>
+                  <label class="cursor-pointer border border-slate-200 rounded-lg p-2 text-center hover:border-forest-600 has-[:checked]:border-forest-700 has-[:checked]:bg-emerald-50 transition-all">
+                    <input type="radio" name="treeSize" value="Large" class="sr-only">
+                    <span class="block text-xs font-bold">Large</span>
+                    <span class="block text-[10px] text-slate-500">45+ ft</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Your Name & City</label>
+                <input type="text" id="treeNameCity" placeholder="e.g. John Smith - Keller, TX" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-forest-600 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Phone Number (For Text Quote)</label>
+                <input type="tel" id="treePhone" placeholder="(817) 000-0000" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-forest-600 focus:outline-none">
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-extrabold text-xs sm:text-sm shadow transition-all flex items-center justify-center gap-1.5">
+                <span>Send to Allen Matthews' Crew</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section id="services" class="py-14 sm:py-20 bg-white w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <span class="px-3 py-1 rounded-full bg-emerald-100 text-forest-800 text-xs font-bold uppercase tracking-wider">
+          Complete Professional Arbor Care
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2">
+          Equipped for Any Tree. In Any Yard.
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2 max-w-xl mx-auto">
+          We bring our own bucket trucks, cranes, and heavy chippers to protect your property and guarantee a spotless cleanup.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Card 1 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-forest-700 flex items-center justify-center mb-4">
+              <i data-lucide="alert-triangle" class="w-6 h-6 text-amber-600"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-2">Hazardous Tree Removal</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Dead oak limbs over your bedroom? High winds split an elm over the fence? We specialize in tight-drop rigging where trees must be lowered in sections without touching your roof or lawn.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Crane-assisted removals</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Power line & roof clearance</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Zero property damage guarantee</li>
+            </ul>
+          </div>
+          <button onclick="openEstimatorModal('Hazardous Tree Removal')" class="w-full py-2.5 rounded-lg border-2 border-forest-800 text-forest-800 hover:bg-forest-800 hover:text-white font-bold text-xs transition-colors">
+            Request Removal Estimate
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border-2 border-forest-600 shadow-md flex flex-col justify-between relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-forest-800 text-white px-3 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">
+            Most Requested
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-forest-700 flex items-center justify-center mb-4">
+              <i data-lucide="scissors" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-2">Precision Tree Trimming & Pruning</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Health-first tree care designed to survive Texas heat and windstorms. We thin dense canopies to allow sunlight through to your turf, remove deadwood, and elevate lower branches.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Oak Wilt preventative pruning</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Canopy wind-sail reduction</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Mistletoe & parasite extraction</li>
+            </ul>
+          </div>
+          <button onclick="openEstimatorModal('Tree Trimming')" class="w-full py-2.5 rounded-lg bg-forest-800 text-white hover:bg-forest-900 font-bold text-xs transition-colors shadow">
+            Schedule Trimming
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-forest-700 flex items-center justify-center mb-4">
+              <i data-lucide="circle-slash" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-2">Stump Grinding & Deep Root Removal</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Eliminate tripping hazards and ugly obstacles. Our high-torque stump grinder chews stumps 6-12 inches below grade so you can replant grass or flowers immediately.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> 6" - 12" below surface grinding</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Wood chips leveled or hauled away</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-forest-600"></i> Surface root tracking & grinding</li>
+            </ul>
+          </div>
+          <button onclick="openEstimatorModal('Stump Grinding')" class="w-full py-2.5 rounded-lg border-2 border-forest-800 text-forest-800 hover:bg-forest-800 hover:text-white font-bold text-xs transition-colors">
+            Get Stump Grinding Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Customer Testimonials -->
+  <section id="reviews" class="py-14 sm:py-20 bg-slate-900 text-white w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div class="flex items-center justify-center gap-1 text-amber-400 mb-1.5">
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black">4.9 Stars Across 99+ DFW Homeowners</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">Real reviews from Keller, Hurst, Justin, and Fort Worth residents.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Review 1 -->
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-800 border border-slate-700 flex flex-col justify-between">
+          <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "I needed a tree removed ASAP. Since I live out of state, it's difficult to find someone you can call and trust. I spoke to Allen Matthews and he offered to go right away to do an estimate. He texted me his price in an hour and completed the job the very next morning with full photos! You can't beat service like that."
+          </p>
+          <div>
+            <div class="font-bold text-white text-xs sm:text-sm">L. Pierce</div>
+            <div class="text-[11px] text-amber-400">Out-of-State Property Owner • Emergency Removal</div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-800 border border-slate-700 flex flex-col justify-between">
+          <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "The tree trimming job that Daniel and his crew just finished at our home in Hurst was absolutely top-notch. I am very pleased with their hard work, how clearly they explained everything, and how they cleaned up afterwards. Left the yard spotless. I will be happy to recommend A. Matt Tree Service to anyone!"
+          </p>
+          <div>
+            <div class="font-bold text-white text-xs sm:text-sm">Bill Conly</div>
+            <div class="text-[11px] text-amber-400">Hurst, TX • Tree Trimming & Clean Yard</div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-800 border border-slate-700 flex flex-col justify-between">
+          <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "We had a big tree and medium tree that needed to be removed. Service was quick, highly professional, and very reasonably priced. And when the job was done, the crew spent a long time cleaning up every last leaf and bit of wood so our yard would be spotless! Very impressed. Thank you!"
+          </p>
+          <div>
+            <div class="font-bold text-white text-xs sm:text-sm">Marcy S.</div>
+            <div class="text-[11px] text-amber-400">Fort Worth, TX • Large Tree Removal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas Grid -->
+  <section id="areas" class="py-12 bg-white border-t border-slate-200 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-4">Serving Tarrant, Denton & Surrounding Counties:</h3>
+      <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700 max-w-4xl mx-auto">
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Keller</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Fort Worth</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Colleyville</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Southlake</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Hurst / Euless / Bedford</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Justin</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200">Roanoke</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest-950 text-slate-400 py-8 border-t border-forest-900 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <div class="text-sm sm:text-base font-black text-white">A. MATT TREE SERVICE</div>
+        <p class="text-xs text-slate-400 mt-0.5">Fort Worth & Keller, TX • Licensed & $2M Commercial Liability</p>
+      </div>
+      <div class="text-xs sm:text-sm">
+        <span class="block text-slate-300">Call Allen Matthews Directly:</span>
+        <a href="tel:8173918899" class="text-amber-400 font-extrabold text-base">(817) 391-8899</a>
+      </div>
+      <div class="text-[11px] text-slate-500">
+        © 2026 A. Matt Tree Service. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Bar (Rock-solid width 100%, no overflow!) -->
+  <div class="fixed md:hidden bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center gap-2 max-w-full shadow-2xl">
+    <a href="tel:8173918899" class="flex-1 min-w-0 py-2.5 px-2 rounded-lg bg-forest-900 text-white font-bold text-xs flex items-center justify-center gap-1 shadow truncate">
+      <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+      <span class="truncate">Call (817) 391-8899</span>
+    </a>
+    <button onclick="openEstimatorModal()" class="flex-1 min-w-0 py-2.5 px-2 rounded-lg bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center gap-1 shadow truncate">
+      <i data-lucide="camera" class="w-3.5 h-3.5 shrink-0"></i>
+      <span class="truncate">Photo Estimate</span>
+    </button>
+  </div>
+
+  <!-- Photo / Estimate Modal -->
+  <div id="estimatorModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeEstimatorModal()" class="absolute top-3 right-3 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-2.5 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-forest-100 text-forest-800 flex items-center justify-center shrink-0">
+          <i data-lucide="camera" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-black text-slate-900">Upload Photo for Fast Quote</h3>
+          <p class="text-[11px] text-slate-500">Allen Matthews will review and text your estimate</p>
+        </div>
+      </div>
+
+      <form id="modalTreeForm" onsubmit="handleModalTreeSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Address / City</label>
+          <input type="text" id="mAddress" placeholder="Street Address & City (e.g. Keller, Southlake)" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-forest-600 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name</label>
+            <input type="text" id="mName" placeholder="Your Name" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-forest-600 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+            <input type="tel" id="mPhone" placeholder="(817) 000-0000" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-forest-600 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="border-2 border-dashed border-slate-300 rounded-xl p-3 text-center hover:border-forest-600 transition-colors cursor-pointer bg-slate-50">
+          <i data-lucide="image-plus" class="w-6 h-6 text-slate-400 mx-auto mb-1"></i>
+          <div class="text-xs font-bold text-slate-700">Tap to select photo of tree/hazard</div>
+          <div class="text-[10px] text-slate-400">Optional, but speeds up your quote by hours</div>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-extrabold text-xs sm:text-sm shadow transition-all flex items-center justify-center gap-1.5">
+          <span>Submit to Allen Matthews</span>
+          <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="treeToast" class="fixed top-4 right-4 z-50 bg-slate-950 text-white border border-amber-400 px-4 py-3 rounded-xl shadow-2xl hidden items-center gap-3">
+    <div class="w-7 h-7 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center font-bold text-xs shrink-0">
+      ✓
+    </div>
+    <div>
+      <div class="text-xs font-bold text-white">Quote Request Received!</div>
+      <div class="text-[11px] text-slate-400">Allen Matthews will review and text you shortly.</div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function openEstimatorModal(service = 'General Tree Job') {
+      const modal = document.getElementById('estimatorModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeEstimatorModal() {
+      const modal = document.getElementById('estimatorModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showTreeToast() {
+      const toast = document.getElementById('treeToast');
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 4000);
+    }
+
+    function handleTreeSubmit(e) {
+      e.preventDefault();
+      showTreeToast();
+      document.getElementById('heroTreeForm').reset();
+    }
+
+    function handleModalTreeSubmit(e) {
+      e.preventDefault();
+      closeEstimatorModal();
+      showTreeToast();
+      document.getElementById('modalTreeForm').reset();
+    }
+  </script>
+</body>
+</html>

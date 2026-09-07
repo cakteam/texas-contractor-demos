@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment & Private Keys
+.env
+*.pem
+credentials.json
+token.json
+
+# OS & Logs
+.DS_Store
+Thumbs.db
+*.log

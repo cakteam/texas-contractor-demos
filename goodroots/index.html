@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Good Roots Roofing & Construction | Fort Worth, TX | Storm & Roof Specialists</title>
+  <meta name="description" content="Fort Worth's premier roofing contractor. BBB A-Accredited, 100% insurance claim assistance, GAF certified materials, free 21-point roof inspections.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b1329',
+              dark: '#111d3d',
+              green: '#15803d',
+              lightGreen: '#22c55e',
+              amber: '#f59e0b',
+              accent: '#eab308',
+              slate: '#f8fafc'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .hero-pattern {
+      background-color: #0b1329;
+      background-image: radial-gradient(rgba(34, 197, 94, 0.15) 1px, transparent 1px), radial-gradient(rgba(15, 23, 42, 0.9) 1px, #0b1329 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-emerald-300 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-emerald-800/40 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5 min-w-0 truncate">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-bold text-white shrink-0">Storm Alert:</span>
+        <span class="truncate text-slate-300">Free 21-point roof & attic inspections across DFW</span>
+      </div>
+      <a href="tel:8177816811" class="shrink-0 flex items-center gap-1 font-bold text-emerald-300 hover:text-white transition-colors">
+        <i data-lucide="phone" class="w-3 h-3"></i>
+        <span class="text-xs font-bold">(817) 781-6811</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-emerald-700 to-slate-900 flex items-center justify-center text-emerald-400 shrink-0 shadow">
+          <i data-lucide="shield-check" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-extrabold tracking-tight text-slate-950 truncate flex items-center gap-1">
+            GOOD ROOTS <span class="text-emerald-600 font-semibold text-xs sm:text-sm">ROOFING</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-semibold text-slate-500 uppercase tracking-wider truncate">Building Good Roots. Protecting What Matters Most.</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-emerald-700 transition-colors">Services</a>
+        <a href="#insurance" class="hover:text-emerald-700 transition-colors">Insurance Claims</a>
+        <a href="#process" class="hover:text-emerald-700 transition-colors">Our Process</a>
+        <a href="#calculator" class="hover:text-emerald-700 transition-colors">Cost Estimator</a>
+        <a href="#reviews" class="hover:text-emerald-700 transition-colors">Reviews</a>
+      </nav>
+
+      <!-- Desktop CTA Phone & Button -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold tracking-wider text-slate-400 uppercase">Direct Dispatch</span>
+          <a href="tel:8177816811" class="text-base font-extrabold text-slate-900 hover:text-emerald-600 transition-colors">
+            (817) 781-6811
+          </a>
+        </div>
+        <button onclick="openModal()" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Free Inspection</span>
+        </button>
+      </div>
+
+      <!-- Mobile Call Trigger -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:8177816811" class="px-2.5 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-semibold max-w-full truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+            <span class="truncate">BBB ACCREDITED A-RATING • FORT WORTH & DFW</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight break-words">
+            North Texas Storms Don't Wait.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">
+              Neither Should Your Roof.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            At Good Roots Roofing, our mission is to provide top-quality roofing solutions that stand the test of time. 100% insurance claim assistance, Class-4 impact shingles, and lifetime workmanship warranties.
+          </p>
+
+          <!-- Key Trust Signals (Stacked clean on mobile, grid on desktop) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-1 w-full">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <i data-lucide="shield" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>BBB Accredited (A Rating)</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <i data-lucide="file-check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>100% Insurance Claim Help</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>1-Day Replacements</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 pt-2 w-full">
+            <button onclick="openModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-extrabold text-sm shadow-xl shadow-emerald-950/40 transition-all flex items-center justify-center gap-2 group">
+              <span>Schedule 100% Free Inspection</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </button>
+            <a href="tel:8177816811" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+              <span>Direct: (817) 781-6811</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Lead Form / Instant Roof Calculator Card -->
+        <div class="lg:col-span-5 w-full">
+          <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-5 sm:p-8 border border-slate-100 relative w-full overflow-hidden">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">Get Free Roof Estimate</h3>
+                <p class="text-xs text-slate-500">Free 21-Point Inspection in Tarrant County</p>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase shrink-0">
+                Zero Upfront
+              </span>
+            </div>
+
+            <form id="heroEstimateForm" onsubmit="handleHeroSubmit(event)" class="space-y-3.5">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">What Service Do You Need?</label>
+                <select id="heroService" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                  <option value="Hail / Wind Damage Claim">Hail / Wind Damage Inspection (Insurance)</option>
+                  <option value="Full Roof Replacement">Full Roof Replacement (Age / Wear)</option>
+                  <option value="Emergency Leak Repair">Emergency Active Leak Repair</option>
+                  <option value="Gutters & Siding">Gutters & Exterior Siding</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Property Type</label>
+                  <select id="heroPropType" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                    <option value="Single Family Home">Single Family</option>
+                    <option value="Two-Story Residential">Two-Story</option>
+                    <option value="Commercial Building">Commercial</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">ZIP Code</label>
+                  <input type="text" id="heroZip" placeholder="e.g. 76179" required pattern="[0-9]{5}" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Full Name</label>
+                <input type="text" id="heroName" placeholder="First & Last Name" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Phone Number (For Scheduling)</label>
+                <input type="tel" id="heroPhone" placeholder="(817) 000-0000" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <span>Request Free Inspection</span>
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Metrics -->
+  <section class="py-8 bg-white border-b border-slate-200 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">A Rating</div>
+          <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 mt-1">BBB Accredited</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600">100%</div>
+          <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 mt-1">Insurance Support</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">Class 4</div>
+          <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 mt-1">Hail Impact Shingles</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600">Lifetime</div>
+          <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 mt-1">Workmanship Warranty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section id="services" class="py-14 sm:py-20 bg-slate-50 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-2">
+          Comprehensive Exterior Protection
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Roofing Built for North Texas Weather
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2 max-w-xl mx-auto">
+          From extreme summer heat to severe spring hail storms, we build roofs with premium underlayments, proper attic ventilation, and impact-certified materials.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+              <i data-lucide="cloud-lightning" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Storm & Hail Damage Insurance Claims</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Don't let your insurance adjuster overlook hidden hail bruises. We meet your adjuster on the roof, document every inch of damage, and ensure your claim covers full restoration.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Free 21-point drone inspection</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Direct insurance adjuster negotiation</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Zero upfront deductible financing</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Hail / Wind Damage Claim')" class="w-full py-2.5 rounded-lg border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold text-xs transition-colors">
+            Get Storm Damage Assessed
+          </button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-emerald-500 shadow-md flex flex-col justify-between relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white px-3 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Full Residential Roof Replacement</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              When your roof reaches the end of its life, we replace it with premium architectural shingles designed to lower cooling costs and protect your home for decades. Completed in a single day.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> GAF Timberline HDZ & Owens Corning</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Synthetic waterproof underlayment</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Magnetic yard nail sweep for kids & pets</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Full Roof Replacement')" class="w-full py-2.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 font-bold text-xs transition-colors shadow">
+            Schedule Replacement Estimate
+          </button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+              <i data-lucide="droplet" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Seamless Gutters & Exterior Siding</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Protect your foundation and exterior walls. We custom-fabricate seamless aluminum gutters on-site to channel Texas torrents safely away from your foundation.
+            </p>
+            <ul class="space-y-2 text-xs font-semibold text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> 5" and 6" custom continuous gutters</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Leaf guard protection systems</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Vinyl & Hardie siding repair</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Gutters & Siding')" class="w-full py-2.5 rounded-lg border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold text-xs transition-colors">
+            Explore Gutter Options
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Estimator Section -->
+  <section id="calculator" class="py-12 sm:py-16 bg-white border-y border-slate-200 w-full overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden w-full">
+        <div class="relative z-10">
+          <div class="inline-block px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">
+            Interactive Tool
+          </div>
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-1">Texas Roof Cost Calculator</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mb-6">Get an instant ballpark estimate based on your home size and material preference.</p>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-6">
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">1. Estimated Sq Footage</label>
+              <select id="calcSqFt" onchange="calculateRoofCost()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white font-medium focus:ring-2 focus:ring-emerald-500">
+                <option value="1500">1,200 - 1,600 sq ft</option>
+                <option value="2200" selected>1,800 - 2,500 sq ft (Average DFW)</option>
+                <option value="3200">2,600 - 3,500 sq ft</option>
+                <option value="4200">3,600+ sq ft</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">2. Shingle Material Tier</label>
+              <select id="calcMaterial" onchange="calculateRoofCost()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white font-medium focus:ring-2 focus:ring-emerald-500">
+                <option value="architectural" selected>Architectural (GAF Timberline)</option>
+                <option value="class4">Class 4 Hail Impact Resistant</option>
+                <option value="designer">Designer Luxury Shingles</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">3. Insurance Expected?</label>
+              <select id="calcInsurance" onchange="calculateRoofCost()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white font-medium focus:ring-2 focus:ring-emerald-500">
+                <option value="yes" selected>Yes, Storm Claim (Deductible Only)</option>
+                <option value="no">No, Out of Pocket / Financing</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Result Display -->
+          <div class="bg-slate-800/90 border border-slate-700 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider font-bold block">Estimated Project Scope:</span>
+              <div id="calcRange" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-0.5">$1,000 – $2,500 (Deductible Only)</div>
+              <p id="calcNote" class="text-[11px] text-slate-400 mt-1">With an approved hail claim, typical homeowner cost is only your policy deductible!</p>
+            </div>
+            <button onclick="openModal('Calculated Estimate')" class="w-full sm:w-auto px-5 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs sm:text-sm shadow transition-all shrink-0">
+              Schedule Free Inspection
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Reviews Section -->
+  <section id="reviews" class="py-14 sm:py-20 bg-white border-t border-slate-200 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Real Homeowner Feedback</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Trusted Across Fort Worth & DFW</h2>
+        </div>
+        <div class="flex items-center gap-1.5 text-amber-400 shrink-0">
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <span class="text-xs font-bold text-slate-800 ml-1">BBB Accredited A Rating</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <div class="bg-slate-50 p-5 sm:p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "After the severe hail storm in Fort Worth, Good Roots came out the very same afternoon. They handled the entire conversation with our insurance adjuster and got our full roof replacement approved. Cleaned up every single nail in the grass. Outstanding experience!"
+          </p>
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">
+              RM
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Robert M.</div>
+              <div class="text-[11px] text-slate-500">Lake Worth, TX • Roof Replacement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-5 sm:p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "They live up to their name. Honest, hardworking, and communicative. The crew was done in one day and our new Class 4 shingles look amazing. Lowered our homeowner insurance premium too!"
+          </p>
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-xs">
+              KD
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Kendra D.</div>
+              <div class="text-[11px] text-slate-500">Saginaw, TX • Hail Claim</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-5 sm:p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+            "Had a mysterious leak near our chimney that two other roofers couldn't diagnose. Good Roots found the flashing defect in 10 minutes and repaired it permanently at a very fair price."
+          </p>
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xs">
+              TH
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Thomas H.</div>
+              <div class="text-[11px] text-slate-500">Fort Worth, TX • Leak Repair</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-10 bg-slate-900 text-white w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-sm sm:text-base font-bold text-slate-200 mb-3">Proudly Serving Tarrant County & DFW Metroplex:</h3>
+      <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-300 max-w-4xl mx-auto">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Fort Worth</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Lake Worth</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Saginaw</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Keller</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Haslet</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700">Arlington</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <div class="text-sm sm:text-base font-extrabold text-white">GOOD ROOTS ROOFING & CONSTRUCTION</div>
+        <p class="text-xs text-slate-500 mt-0.5">Fort Worth, TX 76179 • BBB Accredited • Fully Insured</p>
+      </div>
+      <div class="text-xs sm:text-sm">
+        <span class="block text-slate-400">Direct Line:</span>
+        <a href="tel:8177816811" class="text-emerald-400 font-extrabold text-base">(817) 781-6811</a>
+      </div>
+      <div class="text-[11px] text-slate-600">
+        © 2026 Good Roots Roofing. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Sticky Bottom Action Bar (Rock-solid width 100%, no overflow!) -->
+  <div class="fixed md:hidden bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center gap-2 max-w-full shadow-2xl">
+    <a href="tel:8177816811" class="flex-1 min-w-0 py-2.5 px-2 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center gap-1 shadow truncate">
+      <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+      <span class="truncate">Call (817) 781-6811</span>
+    </a>
+    <button onclick="openModal()" class="flex-1 min-w-0 py-2.5 px-2 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-1 shadow truncate">
+      <i data-lucide="calendar" class="w-3.5 h-3.5 shrink-0"></i>
+      <span class="truncate">Free Inspection</span>
+    </button>
+  </div>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-2.5 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+          <i data-lucide="clipboard-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-extrabold text-slate-900">Book Free 21-Point Inspection</h3>
+          <p class="text-[11px] text-slate-500">Good Roots Roofing • Fort Worth Dispatch</p>
+        </div>
+      </div>
+
+      <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-3">
+        <input type="hidden" id="modalServiceType" value="General Inspection">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Address / City</label>
+          <input type="text" id="modalAddress" placeholder="Street Address & City (e.g. Fort Worth, Saginaw)" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
+            <input type="text" id="modalName" placeholder="Your Name" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+            <input type="tel" id="modalPhone" placeholder="(817) 000-0000" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Time for Drone / Roof Walk</label>
+          <select id="modalTime" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            <option>As soon as possible (Urgent / Active Leak)</option>
+            <option>Tomorrow Morning (8:00 AM - 12:00 PM)</option>
+            <option>Tomorrow Afternoon (12:00 PM - 5:00 PM)</option>
+            <option>This Weekend</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm shadow transition-all flex items-center justify-center gap-1.5">
+          <span>Confirm Inspection Request</span>
+          <i data-lucide="check" class="w-4 h-4"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed top-4 right-4 z-50 bg-slate-950 text-white border border-emerald-500 px-4 py-3 rounded-xl shadow-2xl hidden items-center gap-3">
+    <div class="w-7 h-7 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-bold text-xs shrink-0">
+      ✓
+    </div>
+    <div>
+      <div class="text-xs font-bold text-white">Inspection Request Confirmed!</div>
+      <div class="text-[11px] text-slate-400">Our Fort Worth team will call within 15 minutes.</div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function openModal(service = 'General Inspection') {
+      document.getElementById('modalServiceType').value = service;
+      const modal = document.getElementById('bookingModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 4000);
+    }
+
+    function handleHeroSubmit(e) {
+      e.preventDefault();
+      showToast();
+      document.getElementById('heroEstimateForm').reset();
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      closeModal();
+      showToast();
+      document.getElementById('modalForm').reset();
+    }
+
+    function calculateRoofCost() {
+      const sqft = parseInt(document.getElementById('calcSqFt').value);
+      const material = document.getElementById('calcMaterial').value;
+      const insurance = document.getElementById('calcInsurance').value;
+
+      let basePrice = sqft * 4.2;
+      if (material === 'class4') basePrice *= 1.25;
+      if (material === 'designer') basePrice *= 1.5;
+
+      const low = Math.round(basePrice * 0.95);
+      const high = Math.round(basePrice * 1.15);
+
+      if (insurance === 'yes') {
+        document.getElementById('calcRange').innerText = `$1,000 – $2,500 (Deductible Only)`;
+        document.getElementById('calcNote').innerText = `Insurance covers the remaining ~$${low.toLocaleString()} - $${high.toLocaleString()}! We handle the paperwork.`;
+      } else {
+        document.getElementById('calcRange').innerText = `$${low.toLocaleString()} – $${high.toLocaleString()}`;
+        document.getElementById('calcNote').innerText = `Full tear-off, synthetic underlayment, ridge caps & 100% lifetime workmanship warranty.`;
+      }
+    }
+  </script>
+</body>
+</html>
