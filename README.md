@@ -7,6 +7,39 @@
 
 ---
 
+## ⭐️ 核心交付：公网在线体验、动图预览与 Gmail 发送器
+
+### 1. 公网极速免密体验入口 (GitHub Pages HTTPS 全球加速)
+无需下载本地文件，商家老板或您只需在手机微信/浏览器点击即可直接把玩：
+
+- **🌟 评审总台 (Master Showcase Hub)**：  
+  👉 **https://cakteam.github.io/texas-contractor-demos/**  
+  *(整合 3 家商家的痛点对比、动图预览、手机扫码二维码与一键复制链接)*
+- **屋顶修缮 Demo (Good Roots Roofing)**：  
+  👉 **https://cakteam.github.io/texas-contractor-demos/goodroots/**  
+  *(交互亮点：冰雹保险理赔计算器、Class-4 瓦片升级、21点无人机检测预约)*
+- **重型砍树 Demo (A. Matt Tree Service)**：  
+  👉 **https://cakteam.github.io/texas-contractor-demos/amatttree/**  
+  *(交互亮点：手机拍照即时估价、24/7 紧急吊车排班、20年家族口碑展板)*
+- **车库门维修 Demo (DAPco Garage Door)**：  
+  👉 **https://cakteam.github.io/texas-contractor-demos/dapcodoor/**  
+  *(交互亮点：3秒故障诊断弹窗、60分钟紧急出警卡、5.0★ Google 口碑修复)*
+
+### 2. 邮件视觉钩子 (Visual Hooks: 手机画中画模型 + 循环动图)
+为了在商家老板打开邮件的第 1 秒产生视觉冲击，已生成专用于邮件内嵌的轻量级（< 700 KB）动图与真机模型：
+- **Good Roots Roofing**：`04_PREVIEWS/visual_hooks/01_good_roots_scroll.gif` (618 KB)
+- **A. Matt Tree Service**：`04_PREVIEWS/visual_hooks/02_a_matt_scroll.gif` (665 KB)
+- **DAPco Garage Door**：`04_PREVIEWS/visual_hooks/03_dapco_scroll.gif` (680 KB)
+- *(静态高清模型：`04_PREVIEWS/visual_hooks/*_mockup.png`)*
+
+### 3. Gmail 真实邮件发送器与安全护栏 (`scripts/send_outreach_email.py`)
+已为系统编写了基于 Python + Gmail SMTP 的邮件分发脚本，支持：
+- **真机自测模式**：`python scripts/send_outreach_email.py --target goodroots --test-to 你的Gmail`（先发给自己手机实测）
+- **内联附件 (CID)**：图片直接内嵌在正文，收件人无需点击“显示外部图片”即可自动轮播动图
+- **安全拦截防误发**：默认只跑 Dry-run，只有显式指定目标和参数时才触发网络发送
+
+---
+
 ## 一、 实验规模与宏观数据一览
 
 | 阶段指标 | 执行结果 | 关键说明 |
