@@ -56,7 +56,11 @@ It highlights:
 - Verbatim reviews from Bill Conly, L. Pierce, and Marcy S.
 
 You can preview the live page on your phone right now:
-👉 [Link to A. Matt Live Demo]
+👉 https://cakteam.github.io/texas-contractor-demos/amatttree/
+
+*(Here's a 5-second mobile preview of the photo quote tool in action)*
+
+![A. Matt Tree Mobile Demo](https://cakteam.github.io/texas-contractor-demos/04_PREVIEWS/visual_hooks/02_a_matt_scroll.gif)
 
 No cost, no high-pressure pitch. If you like it and want to replace the 2013 site, we can get it live under your domain in 24 hours. If not, consider it a thank-you for keeping Fort Worth neighborhoods safe after storms.
 

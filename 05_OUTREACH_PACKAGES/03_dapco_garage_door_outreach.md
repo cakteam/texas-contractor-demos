@@ -56,7 +56,11 @@ Here is what I built for you:
 3. One-Tap 60-Minute Emergency Dispatch Bar: Built for panicked homeowners whose cars are stuck in the garage
 
 You can see the live page on your phone right here:
-👉 [Link to DAPco Live Demo]
+👉 https://cakteam.github.io/texas-contractor-demos/dapcodoor/
+
+*(Here is a 5-second mobile preview of the 3-second symptom diagnoser)*
+
+![DAPco Garage Door Mobile Demo](https://cakteam.github.io/texas-contractor-demos/04_PREVIEWS/visual_hooks/03_dapco_scroll.gif)
 
 No charge, no pushy sales pitch. If you like the look and want to fix the 404 error and boost your inbound calls, I'd be happy to hand over the code or help you launch it. If you're happy with how things are, no hard feelings at all!
 

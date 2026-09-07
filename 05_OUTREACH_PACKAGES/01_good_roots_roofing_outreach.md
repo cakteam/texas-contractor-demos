@@ -53,7 +53,11 @@ It includes:
 3. Prominent BBB A-Rating & Class 4 impact shingle certifications
 
 You can test the live page directly on your phone here:
-👉 [Link to Good Roots Live Demo]
+👉 https://cakteam.github.io/texas-contractor-demos/goodroots/
+
+*(I've also attached a 5-second animated preview below showing how the hail calculator looks on mobile)*
+
+![Good Roots Mobile Demo](https://cakteam.github.io/texas-contractor-demos/04_PREVIEWS/visual_hooks/01_good_roots_scroll.gif)
 
 No sales pitch, no obligation whatsoever. If you like how it represents your business and want to put it to work to capture more storm claims, I'd be glad to help you launch it. If not, no worries at all—you're still welcome to borrow any of the copy or structure!
 
