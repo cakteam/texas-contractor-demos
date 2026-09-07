@@ -1,0 +1,427 @@
+import os
+
+os.makedirs('03_DEMOS/05_ameritex_foundation', exist_ok=True)
+os.makedirs('ameritex', exist_ok=True)
+
+html_content = """<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AmeriTex Foundation Repair | Keller, Fort Worth & Dallas, TX | Lifetime Pier Warranty</title>
+  <meta name="description" content="DFW's trusted steel pier foundation repair specialists. 50+ years combined experience. Lifetime transferable warranty. Free laser elevation evaluation. Call (817) 703-9111.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navyBrand: {
+              950: '#071228',
+              900: '#0c2146',
+              800: '#13356e',
+              700: '#1d4ed8',
+              600: '#2563eb',
+              500: '#3b82f6',
+              100: '#dbeafe',
+              50: '#eff6ff'
+            },
+            bronzeBrand: {
+              500: '#d97706',
+              600: '#b45309',
+              700: '#92400e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .steel-pattern {
+      background-color: #071228;
+      background-image: radial-gradient(rgba(59, 130, 246, 0.12) 1px, transparent 1px), radial-gradient(rgba(29, 78, 216, 0.1) 1px, #071228 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top Warranty Ticker -->
+  <div class="bg-navyBrand-950 text-sky-200 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-navyBrand-800 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5 min-w-0 truncate">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-amber-400 animate-ping"></span>
+        <span class="font-bold text-amber-400 shrink-0">Texas Clay Protection:</span>
+        <span class="truncate text-slate-300">Exterior brick cracks or sticking doors? Free on-site laser level foundation evaluations in DFW.</span>
+      </div>
+      <a href="tel:8177039111" class="shrink-0 flex items-center gap-1 font-extrabold text-amber-400 hover:text-white transition-colors">
+        <i data-lucide="phone" class="w-3 h-3"></i>
+        <span class="text-xs sm:text-sm font-bold">(817) 703-9111</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-navyBrand-900 to-navyBrand-700 flex items-center justify-center text-white shrink-0 shadow-md">
+          <i data-lucide="layers" class="w-6 h-6 text-amber-400"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-black tracking-tight text-slate-950 truncate flex items-center gap-1">
+            AMERITEX <span class="text-navyBrand-700 font-extrabold text-xs sm:text-sm">FOUNDATION</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">Keller & DFW • Lifetime Transferable Warranty</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#piers" class="hover:text-navyBrand-700 transition-colors">Steel Piers</a>
+        <a href="#process" class="hover:text-navyBrand-700 transition-colors">Jobsite Evidence</a>
+        <a href="#assessment" class="hover:text-navyBrand-700 transition-colors">Damage Assessment</a>
+        <a href="#warranty" class="hover:text-navyBrand-700 transition-colors">Warranty</a>
+      </nav>
+
+      <!-- Desktop Phone & CTA -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold text-slate-400 uppercase">Speak Direct With Owner:</span>
+          <a href="tel:8177039111" class="text-base font-extrabold text-slate-900 hover:text-navyBrand-700 transition-colors flex items-center gap-1 justify-end">
+            <i data-lucide="phone" class="w-4 h-4 text-navyBrand-700"></i> (817) 703-9111
+          </a>
+        </div>
+        <button onclick="document.getElementById('assessment').scrollIntoView({behavior: 'smooth'})" class="px-5 py-2.5 rounded-xl bg-navyBrand-700 hover:bg-navyBrand-800 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="crosshair" class="w-4 h-4 text-amber-400"></i>
+          <span>Free Laser Check</span>
+        </button>
+      </div>
+
+      <!-- Mobile Call Now -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:8177039111" class="px-3 py-1.5 rounded-lg bg-navyBrand-700 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="steel-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-navyBrand-500/15 border border-navyBrand-500/30 text-sky-300 text-xs font-bold max-w-full truncate">
+            <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+            <span class="truncate">OVER 50 YEARS COMBINED DFW FOUNDATION EXPERIENCE</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
+            Engineered For Texas Clay.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-200 to-amber-300">
+              Guaranteed For Life.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            North Texas expansive clay soil shrinks in dry heat and swells in rain, snapping foundations. AmeriTex drives heavy double-walled hydraulic steel piers deep into solid load-bearing bedrock—permanently lifting and securing your home.
+          </p>
+
+          <!-- Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full">
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="shield-check" class="w-4 h-4 text-amber-400 shrink-0"></i>
+              <span>Lifetime Transferable Warranty</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="anchor" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span>Bedrock-Driven Steel Piers</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="ruler" class="w-4 h-4 text-amber-400 shrink-0"></i>
+              <span>Digital Laser Elevation Mapping</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <a href="tel:8177039111" class="px-6 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold text-base shadow-lg shadow-amber-600/30 flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Call Direct: (817) 703-9111</span>
+            </a>
+            <button onclick="document.getElementById('assessment').scrollIntoView({behavior: 'smooth'})" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="clipboard-check" class="w-5 h-5 text-amber-400"></i>
+              <span>Check Foundation Symptoms</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column Card: Assessment Card -->
+        <div class="lg:col-span-5" id="assessment">
+          <div class="bg-slate-900/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-navyBrand-500/30 shadow-2xl space-y-4">
+            <div class="border-b border-slate-800 pb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">DFW Homeowner Tool</span>
+              <h3 class="text-lg font-black text-white">Foundation Damage Evaluation</h3>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300">
+              Notice any of these classic Texas foundation settlement red flags in your home?
+            </p>
+
+            <form onsubmit="alert('Thank you! Your foundation evaluation request has been sent to our Keller team. We will contact you to schedule a free on-site laser level elevation scan.'); return false;" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Select Warning Signs:</label>
+                <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-navyBrand-500">
+                  <option>Stair-Step Cracks in Exterior Brick / Mortar</option>
+                  <option>Interior Doors Sticking or Won't Latch</option>
+                  <option>Diagonal Cracks Around Door/Window Frames</option>
+                  <option>Gaps Between Wall Trim and Hardwood/Tile Floors</option>
+                  <option>Visible Sloping / Uneven Floors</option>
+                  <option>Comprehensive Pre-Sale Foundation Inspection</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Property City or Zip Code:</label>
+                <input type="text" required placeholder="e.g. Keller, Fort Worth, Dallas, 76248" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-navyBrand-500">
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Your Name:</label>
+                  <input type="text" required placeholder="Owner name" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-navyBrand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Phone Number:</label>
+                  <input type="tel" required placeholder="(817) 000-0000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-navyBrand-500">
+                </div>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-extrabold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Schedule Free Laser Elevation Scan</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Interactive Comparison Section -->
+  <section id="process" class="py-16 sm:py-20 bg-slate-900 text-white w-full">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+          Heavy Engineering Fieldwork
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-3">
+          Real Hydraulic Steel Pier Underpinning
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          Touch and drag the slider horizontally to compare our dual hydraulic ram pier driving into bedrock with our full perimeter structural steel lock-off.
+        </p>
+      </div>
+
+      <!-- Before/After Slider Container -->
+      <div class="ba-slider-container relative w-full h-[320px] sm:h-[480px] rounded-2xl sm:rounded-3xl overflow-hidden select-none border border-slate-700 shadow-2xl group cursor-ew-resize">
+        <!-- AFTER: Full Perimeter Welded Structural Lock-off -->
+        <img src="../assets/before_after/ameritex_after.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="After: Full Perimeter Steel Pier Underpinning & Welding">
+        <div class="absolute top-4 right-4 z-10 bg-navyBrand-700/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-navyBrand-400/40">
+          STEP 2: Full Perimeter Structural Steel Lock-off & Home Stabilization
+        </div>
+
+        <!-- BEFORE: Dual Hydraulic Steel Pier Ram -->
+        <div class="ba-before-wrap absolute inset-y-0 left-0 w-1/2 overflow-hidden border-r-2 border-white shadow-[0_0_25px_rgba(0,0,0,0.8)] z-10">
+          <img src="../assets/before_after/ameritex_before.jpg" class="ba-before-img absolute top-0 left-0 max-w-none h-full object-cover pointer-events-none" alt="Before: Dual Hydraulic Steel Pier Driving & Footing Lift">
+          <div class="absolute top-4 left-4 z-10 bg-slate-950/90 backdrop-blur-md text-amber-400 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-amber-500/40">
+            STEP 1: Bedrock Steel Pier Driving & Hydraulic Footing Lift
+          </div>
+        </div>
+
+        <!-- DRAG HANDLE -->
+        <div class="ba-handle absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 z-20 w-12 h-12 rounded-full bg-white text-slate-900 shadow-2xl flex items-center justify-center font-black pointer-events-none border-2 border-amber-500 transition-transform group-hover:scale-110">
+          <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Slider Footnote -->
+      <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/60">
+        <div class="flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4 text-amber-400 shrink-0"></i>
+          <span>100% Real Trade Jobsite Photography from AmeriTex Foundation Field Crews.</span>
+        </div>
+        <div class="flex items-center gap-2 shrink-0 font-semibold text-slate-300">
+          <span>Keller & Fort Worth Headquarters</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>Zero Subcontractors</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Steel Piers vs Concrete Pilings Section -->
+  <section id="piers" class="py-16 sm:py-20 bg-white w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-navyBrand-700 uppercase tracking-wider bg-navyBrand-100 px-3 py-1 rounded-full">
+          Engineering Superiority
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+          Why Double-Walled Steel Piers Win in Texas
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-navyBrand-100 text-navyBrand-700 flex items-center justify-center font-bold">
+            <i data-lucide="anchor" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Bedrock Depth Penetration</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Concrete cylinders often hit shallow friction refusal at 8-12 feet, failing when drought causes soil to contract. Our steel piers penetrate 20 to 45+ feet down until hitting impenetrable bedrock or hard shale.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-navyBrand-100 text-navyBrand-700 flex items-center justify-center font-bold">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Lifetime Transferable Warranty</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Every steel pier installed by AmeriTex comes backed by a lifetime warranty that transfers seamlessly to future buyers if you sell your property. Essential protection for your home's resale value.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-navyBrand-100 text-navyBrand-700 flex items-center justify-center font-bold">
+            <i data-lucide="droplet-off" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">French Drains & Root Barriers</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Water pooling next to your slab is the root cause of 80% of foundation heave and settlement. We design and install custom subsurface drainage and tree root deflection barriers to protect your perimeter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Bar for Mobile -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex items-center gap-2">
+    <a href="tel:8177039111" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 text-white font-black text-sm flex items-center justify-center gap-1.5 shadow-lg">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span>Call (817) 703-9111</span>
+    </a>
+    <button onclick="document.getElementById('assessment').scrollIntoView({behavior: 'smooth'})" class="px-4 py-3 rounded-xl bg-navyBrand-700 text-white font-bold text-xs flex items-center justify-center gap-1">
+      <i data-lucide="ruler" class="w-4 h-4"></i>
+      <span>Laser Scan</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+      <div class="font-bold text-slate-200 text-sm">AmeriTex Foundation Repair LLC</div>
+      <p>Headquartered in Keller, TX. Serving Fort Worth, Dallas, Arlington, Southlake, Colleyville & Tarrant County.</p>
+      <p>50+ Years Combined DFW Experience • Direct: (817) 703-9111 • Email: AmeriTexFoundationRepair@gmail.com</p>
+      <div class="pt-4 text-slate-600 text-[11px]">
+        Prototype Demonstration Powered by Texas Contractor Growth Hub.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Before / After Slider Logic
+    document.querySelectorAll('.ba-slider-container').forEach(container => {
+      const beforeWrap = container.querySelector('.ba-before-wrap');
+      const beforeImg = container.querySelector('.ba-before-img');
+      const handle = container.querySelector('.ba-handle');
+      let isDragging = false;
+
+      function updateSlider(x) {
+        const rect = container.getBoundingClientRect();
+        let offsetX = x - rect.left;
+        if (offsetX < 0) offsetX = 0;
+        if (offsetX > rect.width) offsetX = rect.width;
+        const percent = (offsetX / rect.width) * 100;
+
+        beforeWrap.style.width = percent + '%';
+        handle.style.left = percent + '%';
+        beforeImg.style.width = rect.width + 'px';
+      }
+
+      function onResize() {
+        const rect = container.getBoundingClientRect();
+        beforeImg.style.width = rect.width + 'px';
+      }
+
+      window.addEventListener('resize', onResize);
+      onResize();
+
+      container.addEventListener('mousedown', e => {
+        isDragging = true;
+        updateSlider(e.clientX);
+      });
+
+      window.addEventListener('mousemove', e => {
+        if (!isDragging) return;
+        updateSlider(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => { isDragging = false; });
+
+      container.addEventListener('touchstart', e => {
+        isDragging = true;
+        updateSlider(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchmove', e => {
+        if (!isDragging) return;
+        updateSlider(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => { isDragging = false; });
+    });
+  </script>
+</body>
+</html>
+"""
+
+with open('ameritex/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+with open('03_DEMOS/05_ameritex_foundation/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content.replace('../assets/before_after/', '../../assets/before_after/'))
+
+print("AmeriTex generated successfully")

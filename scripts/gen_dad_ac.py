@@ -1,0 +1,377 @@
+import os
+
+os.makedirs('03_DEMOS/06_dad_home_services', exist_ok=True)
+os.makedirs('calldadac', exist_ok=True)
+
+html_content = """<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>D.A.D. Home Services | Dallas & DFW, TX | TACLA 116949C Licensed HVAC & Generators</title>
+  <meta name="description" content="Call D.A.D. when you need comfort done right. TACLA 116949C licensed. Fast same-day AC repair, heat pump replacement & whole-home generators in Dallas-Fort Worth. Call (682) 328-3700.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dadBrand: {
+              950: '#07152b',
+              900: '#0c244d',
+              800: '#123773',
+              700: '#1d4ed8',
+              600: '#2563eb',
+              500: '#3b82f6',
+              100: '#dbeafe',
+              50: '#eff6ff'
+            },
+            orangeBrand: {
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .dad-pattern {
+      background-color: #07152b;
+      background-image: radial-gradient(rgba(37, 99, 235, 0.15) 1px, transparent 1px), radial-gradient(rgba(249, 115, 22, 0.1) 1px, #07152b 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 md:pb-0 w-full overflow-x-hidden">
+
+  <!-- Top License Ticker -->
+  <div class="bg-dadBrand-950 text-sky-200 px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs md:text-sm font-medium border-b border-dadBrand-800 w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5 min-w-0 truncate">
+        <span class="flex h-2 w-2 shrink-0 rounded-full bg-orange-400 animate-ping"></span>
+        <span class="font-black text-orange-400 shrink-0">State of Texas TACLA 116949C:</span>
+        <span class="truncate text-slate-300">Licensed & Insured HVAC, Air Quality & Backup Generators across Dallas & Arlington.</span>
+      </div>
+      <a href="tel:6823283700" class="shrink-0 flex items-center gap-1 font-extrabold text-orange-400 hover:text-white transition-colors">
+        <i data-lucide="phone" class="w-3 h-3"></i>
+        <span class="text-xs sm:text-sm font-bold">(682) 328-3700</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-dadBrand-900 to-orange-600 flex items-center justify-center text-white shrink-0 shadow-md">
+          <i data-lucide="shield-alert" class="w-6 h-6 text-white"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="text-base sm:text-xl font-black tracking-tight text-slate-950 truncate flex items-center gap-1">
+            D.A.D. <span class="text-dadBrand-700 font-extrabold text-xs sm:text-sm">HOME SERVICES</span>
+          </div>
+          <p class="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">Dallas-Fort Worth • TACLA 116949C Licensed</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-dadBrand-700 transition-colors">Services</a>
+        <a href="#evidence" class="hover:text-dadBrand-700 transition-colors">Field Diagnostics</a>
+        <a href="#triage" class="hover:text-dadBrand-700 transition-colors">60-Sec Dispatch</a>
+        <a href="#generator" class="hover:text-dadBrand-700 transition-colors">Generators</a>
+      </nav>
+
+      <!-- Desktop Phone & CTA -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0">
+        <div class="text-right">
+          <span class="block text-[11px] font-bold text-slate-400 uppercase">Founder Direct Line:</span>
+          <a href="tel:6823283700" class="text-base font-extrabold text-slate-900 hover:text-dadBrand-700 transition-colors flex items-center gap-1 justify-end">
+            <i data-lucide="phone" class="w-4 h-4 text-dadBrand-700"></i> (682) 328-3700
+          </a>
+        </div>
+        <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
+          <span>Schedule Service</span>
+        </button>
+      </div>
+
+      <!-- Mobile Call Now -->
+      <div class="flex lg:hidden items-center shrink-0">
+        <a href="tel:6823283700" class="px-3 py-1.5 rounded-lg bg-orange-600 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="dad-pattern relative text-white pt-8 pb-16 sm:pt-16 sm:pb-24 overflow-hidden w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-dadBrand-500/15 border border-dadBrand-500/30 text-sky-300 text-xs font-bold max-w-full truncate">
+            <span class="w-2 h-2 rounded-full bg-orange-400 shrink-0 animate-pulse"></span>
+            <span class="truncate">DALLAS & ARLINGTON EMERGENCY COOLING & GENERATOR EXPERTS</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight break-words">
+            Call D.A.D. When You Need<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-orange-400">
+              Comfort Done Right.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
+            Founded by David with a family-first commitment to North Texas homeowners. TACLA 116949C licensed heating, AC repair, precision duct hygiene, and whole-home generator solutions. Honest pricing, certified craftsmanship.
+          </p>
+
+          <!-- Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 w-full">
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="badge-check" class="w-4 h-4 text-orange-400 shrink-0"></i>
+              <span>State Licensed TACLA 116949C</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="zap" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span>Generac Certified Backup Power</span>
+            </div>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold">
+              <i data-lucide="clock" class="w-4 h-4 text-orange-400 shrink-0"></i>
+              <span>Same-Day Emergency Service</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <a href="tel:6823283700" class="px-6 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-extrabold text-base shadow-lg shadow-orange-600/30 flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Call David: (682) 328-3700</span>
+            </a>
+            <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="wrench" class="w-5 h-5 text-orange-400"></i>
+              <span>Schedule Service (60 Sec)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column Card: Dispatch Form -->
+        <div class="lg:col-span-5" id="triage">
+          <div class="bg-slate-900/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-dadBrand-500/30 shadow-2xl space-y-4">
+            <div class="border-b border-slate-800 pb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Priority Service Channel</span>
+              <h3 class="text-lg font-black text-white">Direct Service Dispatch</h3>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300">
+              Submit your heating, AC, or generator issue directly to David and our senior technician team:
+            </p>
+
+            <form onsubmit="alert('Thank you! Your service request has been received by David at D.A.D. Home Services. We will call you within 15 minutes to confirm appointment timing.'); return false;" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">Service Type Needed:</label>
+                <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-dadBrand-500">
+                  <option>Emergency AC Repair (Not Cooling / Frozen)</option>
+                  <option>High-SEER2 Heat Pump / System Replacement</option>
+                  <option>Whole-Home Generator Backup Power</option>
+                  <option>Indoor Air Quality & Duct Sanitize</option>
+                  <option>Seasonal Comprehensive System Tune-Up</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">DFW City or Street Address:</label>
+                <input type="text" required placeholder="e.g. Dallas, Arlington, Grand Prairie" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-dadBrand-500">
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Your Name:</label>
+                  <input type="text" required placeholder="Homeowner name" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-dadBrand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">Phone Number:</label>
+                  <input type="tel" required placeholder="(682) 000-0000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-dadBrand-500">
+                </div>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-extrabold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send to D.A.D. Dispatch</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Interactive Comparison Section -->
+  <section id="evidence" class="py-16 sm:py-20 bg-slate-900 text-white w-full">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-orange-400 uppercase tracking-wider bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">
+          TACLA 116949C Licensed Field Diagnostics
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-3">
+          Precision Electrical & Indoor Air Calibration
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          Touch and drag the slider horizontally to compare our electrical multimeter & compressor diagnostics with our precision indoor air system installation.
+        </p>
+      </div>
+
+      <!-- Before/After Slider Container -->
+      <div class="ba-slider-container relative w-full h-[320px] sm:h-[480px] rounded-2xl sm:rounded-3xl overflow-hidden select-none border border-slate-700 shadow-2xl group cursor-ew-resize">
+        <!-- AFTER: Precision Calibrated Indoor Installation -->
+        <img src="../assets/before_after/dad_after.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="After: Precision Indoor Mini-Split & Air Handler Calibrated">
+        <div class="absolute top-4 right-4 z-10 bg-dadBrand-700/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-dadBrand-400/40">
+          DELIVERY: Precision Indoor System Calibration & Multi-Point Certification
+        </div>
+
+        <!-- BEFORE: Electrical Diagnostics -->
+        <div class="ba-before-wrap absolute inset-y-0 left-0 w-1/2 overflow-hidden border-r-2 border-white shadow-[0_0_25px_rgba(0,0,0,0.8)] z-10">
+          <img src="../assets/before_after/dad_before.jpg" class="ba-before-img absolute top-0 left-0 max-w-none h-full object-cover pointer-events-none" alt="Before: Outdoor Condenser Electrical Multimeter Testing">
+          <div class="absolute top-4 left-4 z-10 bg-slate-950/90 backdrop-blur-md text-orange-400 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-orange-500/40">
+            DIAGNOSIS: Electrical Terminal & Compressor Multimeter Testing
+          </div>
+        </div>
+
+        <!-- DRAG HANDLE -->
+        <div class="ba-handle absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 z-20 w-12 h-12 rounded-full bg-white text-slate-900 shadow-2xl flex items-center justify-center font-black pointer-events-none border-2 border-orange-500 transition-transform group-hover:scale-110">
+          <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Slider Footnote -->
+      <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/60">
+        <div class="flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4 text-orange-400 shrink-0"></i>
+          <span>100% Real Trade Photography from D.A.D. Home Services Field Archive.</span>
+        </div>
+        <div class="flex items-center gap-2 shrink-0 font-semibold text-slate-300">
+          <span>State Licensed TACLA 116949C</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+          <span>Dallas-Fort Worth Certified</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Bar for Mobile -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex items-center gap-2">
+    <a href="tel:6823283700" class="flex-1 py-3 rounded-xl bg-orange-600 text-white font-black text-sm flex items-center justify-center gap-1.5 shadow-lg">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span>Call (682) 328-3700</span>
+    </a>
+    <button onclick="document.getElementById('triage').scrollIntoView({behavior: 'smooth'})" class="px-4 py-3 rounded-xl bg-dadBrand-700 text-white font-bold text-xs flex items-center justify-center gap-1">
+      <i data-lucide="calendar" class="w-4 h-4"></i>
+      <span>Dispatch</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+      <div class="font-bold text-slate-200 text-sm">D.A.D. Home Services LLC</div>
+      <p>Serving Dallas, Arlington, Grand Prairie, and the greater North Texas region.</p>
+      <p>Texas TACLA 116949C Licensed Contractor • Direct: (682) 328-3700 • Email: david@calldadac.com</p>
+      <div class="pt-4 text-slate-600 text-[11px]">
+        Prototype Demonstration Powered by Texas Contractor Growth Hub.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Before / After Slider Logic
+    document.querySelectorAll('.ba-slider-container').forEach(container => {
+      const beforeWrap = container.querySelector('.ba-before-wrap');
+      const beforeImg = container.querySelector('.ba-before-img');
+      const handle = container.querySelector('.ba-handle');
+      let isDragging = false;
+
+      function updateSlider(x) {
+        const rect = container.getBoundingClientRect();
+        let offsetX = x - rect.left;
+        if (offsetX < 0) offsetX = 0;
+        if (offsetX > rect.width) offsetX = rect.width;
+        const percent = (offsetX / rect.width) * 100;
+
+        beforeWrap.style.width = percent + '%';
+        handle.style.left = percent + '%';
+        beforeImg.style.width = rect.width + 'px';
+      }
+
+      function onResize() {
+        const rect = container.getBoundingClientRect();
+        beforeImg.style.width = rect.width + 'px';
+      }
+
+      window.addEventListener('resize', onResize);
+      onResize();
+
+      container.addEventListener('mousedown', e => {
+        isDragging = true;
+        updateSlider(e.clientX);
+      });
+
+      window.addEventListener('mousemove', e => {
+        if (!isDragging) return;
+        updateSlider(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => { isDragging = false; });
+
+      container.addEventListener('touchstart', e => {
+        isDragging = true;
+        updateSlider(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchmove', e => {
+        if (!isDragging) return;
+        updateSlider(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => { isDragging = false; });
+    });
+  </script>
+</body>
+</html>
+"""
+
+with open('calldadac/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+with open('03_DEMOS/06_dad_home_services/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content.replace('../assets/before_after/', '../../assets/before_after/'))
+
+print("DAD AC generated successfully")
