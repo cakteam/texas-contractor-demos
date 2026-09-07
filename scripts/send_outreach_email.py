@@ -79,6 +79,54 @@ TARGET_PROFILES = {
             "Homepage displays a raw red Facebook OAuth API error message",
             "Lacks a 3-second symptom diagnoser (broken spring vs cable) for emergency callers"
         ]
+    },
+    "duckac": {
+        "name": "Duck AC & Heating",
+        "city": "Arlington, Mansfield, Grand Prairie, TX",
+        "recipient_name": "Duck AC & Heating Team",
+        "recipient_email": "info@duckacandheating.com",
+        "phone": "(817) 631-8281",
+        "current_url": "https://www.duckacandheating.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/duckac/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "04_duck_ac_mockup.png",
+        "subject": "Quick heads-up about a mobile calling issue on duckacandheating.com (+ live concept)",
+        "pain_points": [
+            "Mobile site phone number (817) 631-8281 lacks clickable 'tap-to-call' link during emergency summer breakdowns",
+            "Leftover Wix default placeholder text (example@mysite.com) appearing in live source",
+            "No 60-second emergency triage dispatch selector for frantic homeowners with broken AC"
+        ]
+    },
+    "ameritex": {
+        "name": "AmeriTex Foundation Repair",
+        "city": "Keller, Fort Worth, Dallas, TX",
+        "recipient_name": "AmeriTex Foundation Repair Team",
+        "recipient_email": "AmeriTexFoundationRepair@gmail.com",
+        "phone": "(817) 703-9111",
+        "current_url": "https://ameritexfoundationrepair.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/ameritex/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "05_ameritex_mockup.png",
+        "subject": "Quick note on your mobile site + built a custom steel pier prototype for AmeriTex",
+        "pain_points": [
+            "Mobile view compresses your heavy equipment and Silverado Lone Star job site photos",
+            "Lacks a 3-step foundation symptom self-assessment funnel for high-ticket ($8k-$25k) inquiries",
+            "No 1-tap direct dialing button on mobile headers for exterior brick crack emergency calls"
+        ]
+    },
+    "calldadac": {
+        "name": "D.A.D. Home Services",
+        "city": "Dallas, Arlington, DFW, TX",
+        "recipient_name": "David",
+        "recipient_email": "david@calldadac.com",
+        "phone": "(682) 328-3700",
+        "current_url": "https://calldadac.com/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/calldadac/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "06_dad_mockup.png",
+        "subject": "David — quick thought on calldadac.com mobile speed (+ live prototype for you)",
+        "pain_points": [
+            "Older WordPress theme and plugins causing 3-4 second load delay on mobile connections",
+            "Buried dispatch form costs emergency calls during peak North Texas heatwaves",
+            "Doesn't prominently highlight TACLA 116949C state license & Generac certified generator capabilities on mobile"
+        ]
     }
 }
 
@@ -283,7 +331,7 @@ def send_email(target_key, test_recipient=None, dry_run=True, force_send=False):
 
 def main():
     parser = argparse.ArgumentParser(description="Commercial Outreach Email Dispatcher via Gmail")
-    parser.add_argument("--target", choices=["goodroots", "amatttree", "dapco"], default="goodroots",
+    parser.add_argument("--target", choices=["goodroots", "amatttree", "dapco", "duckac", "ameritex", "calldadac"], default="goodroots",
                         help="Target business profile to send")
     parser.add_argument("--test-to", type=str, default=None,
                         help="Send a live test to your own inbox to preview on your phone")
