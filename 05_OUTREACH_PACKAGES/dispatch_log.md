@@ -27,13 +27,13 @@
 
 ---
 
-## 1.3 第三批（Wave 3）新拓展高客单承包商 (已完成部署待发送)
+## 1.3 第三批（Wave 3）新拓展高客单承包商 (已送达)
 
-| 目标商家 | 行业与客单价 | 收件地址 | 主题行 (Subject Line) | 演示站点 (Live URL) | 邮件视觉钩子 (Inline CID) | 状态 |
+| 目标商家 | 行业与客单价 | 收件地址 | 主题行 (Subject Line) | 演示站点 (Live URL) | 邮件视觉钩子 (Inline CID) | 发送状态 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Bourdon Fence Co. LLC** | 定制红雪松与铁艺围栏<br>(\$5k-\$15k) | `Bourdonfenceco@gmail.com` | `Ryan & Brittany — quick idea on your mobile site (+ live concept for Bourdon Fence)` | [Bourdon Fence Demo](https://cakteam.github.io/texas-contractor-demos/bourdonfence/) | `07_bourdon_mockup.png`<br>*(225 KB 高清真机)* | **READY (已就绪)** |
-| **Rockwater Plumbing** | 24小时紧急水管与暗管探测<br>(\$3k-\$18k) | `rockwaterplumbing@gmail.com` | `Quick observation on callrockwaterplumbing.com (+ live mobile concept for you)` | [Rockwater Demo](https://cakteam.github.io/texas-contractor-demos/rockwater/) | `08_rockwater_mockup.png`<br>*(211 KB 高清真机)* | **READY (已就绪)** |
-| **Elevated Pool Remodeling** | 奢华石英泳池翻新与石灰华石铺贴<br>(\$15k-\$65k) | `Elevatedpoolremodeling@gmail.com` | `Critical technical note on elevatedpoolremodeling.com (+ built a luxury pool concept for you)` | [Elevated Pool Demo](https://cakteam.github.io/texas-contractor-demos/elevatedpool/) | `09_elevated_mockup.png`<br>*(231 KB 高清真机)* | **READY (已就绪)** |
+| **Bourdon Fence Co. LLC** | 定制红雪松与铁艺围栏<br>(\$5k-\$15k) | `Bourdonfenceco@gmail.com` | `Ryan & Brittany — quick idea on your mobile site (+ live concept for Bourdon Fence)` | [Bourdon Fence Demo](https://cakteam.github.io/texas-contractor-demos/bourdonfence/) | `07_bourdon_mockup.png`<br>*(225 KB 高清真机)* | **✅ SUCCESS (已送达)** |
+| **Rockwater Plumbing** | 24小时紧急水管与暗管探测<br>(\$3k-\$18k) | `rockwaterplumbing@gmail.com` | `Quick observation on callrockwaterplumbing.com (+ live mobile concept for you)` | [Rockwater Demo](https://cakteam.github.io/texas-contractor-demos/rockwater/) | `08_rockwater_mockup.png`<br>*(211 KB 高清真机)* | **✅ SUCCESS (已送达)** |
+| **Elevated Pool Remodeling** | 奢华石英泳池翻新与石灰华石铺贴<br>(\$15k-\$65k) | `Elevatedpoolremodeling@gmail.com` | `Critical technical note on elevatedpoolremodeling.com (+ built a luxury pool concept for you)` | [Elevated Pool Demo](https://cakteam.github.io/texas-contractor-demos/elevatedpool/) | `09_elevated_mockup.png`<br>*(231 KB 高清真机)* | **✅ SUCCESS (已送达)** |
 
 ---
 
