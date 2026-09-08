@@ -3,191 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Scoff Troff Cafe | Artisan Brunch & Coastal Burgers | St Ives Cornwall</title>
+  <title>Scoff Troff Cafe | Artisanal Coastal Bistro & Cornish Brunch | St Ives</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
-    body { font-family: 'Outfit', sans-serif; overflow-x: hidden; width: 100%; }
-    .font-serif-heading { font-family: 'Playfair Display', serif; }
-    .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; width: 100%; background-color: #071513; }
+    .font-playfair { font-family: 'Playfair Display', Georgia, serif; }
+    .brass-gradient {
+      background: linear-gradient(135deg, #f7e0b5 0%, #d8a858 50%, #9e7530 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .luxury-sage-glass {
+      background: rgba(12, 33, 29, 0.82);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(216, 168, 88, 0.22);
+    }
   </style>
 </head>
-<body class="bg-[#0e2730] text-slate-100 min-h-screen flex flex-col pb-20">
+<body class="text-stone-200 min-h-screen flex flex-col pb-24 selection:bg-amber-400 selection:text-black">
 
-  <!-- Top Notice Bar -->
-  <div class="bg-[#091a20] border-b border-teal-500/20 py-2 px-4 text-xs font-medium text-teal-300 flex items-center justify-between">
+  <!-- Top Coastal Notice -->
+  <div class="bg-[#040c0b] border-b border-[#d8a858]/20 py-2 px-4 text-[11px] tracking-wider uppercase text-stone-400 flex items-center justify-between gap-2">
     <div class="truncate flex items-center gap-1.5">
-      <span>🐾 St Ives Harbour • Dog-Friendly Coastal Cafe</span>
+      <span class="w-1.5 h-1.5 rounded-full bg-[#d8a858] animate-pulse shrink-0"></span>
+      <span class="truncate">St Ives Harbour • Cornwall</span>
     </div>
-    <a href="tel:+441736797341" class="shrink-0 font-bold hover:text-white transition">
-      <span>📞 01736 797341</span>
+    <a href="tel:+441736797341" class="shrink-0 text-amber-200 hover:text-white transition font-semibold tracking-wider flex items-center gap-1">
+      <span>01736 797341</span>
     </a>
   </div>
 
   <!-- Header -->
-  <header class="sticky top-0 z-40 bg-[#0e2730]/95 backdrop-blur-md border-b border-teal-800/40 px-4 py-3">
-    <div class="max-w-4xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2.5">
-        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-xl shadow">
+  <header class="sticky top-0 z-40 bg-[#071513]/90 backdrop-blur-xl border-b border-stone-800/60 px-4 py-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full border border-[#d8a858]/40 flex items-center justify-center text-amber-300 text-base bg-[#0e2722]">
           ☕
         </div>
         <div>
-          <h1 class="font-serif-heading text-base sm:text-lg font-bold text-white leading-tight">SCOFF TROFF</h1>
-          <p class="text-[10px] tracking-widest text-teal-400 uppercase font-semibold">Cafe • St Ives Cornwall</p>
+          <h1 class="font-playfair text-base sm:text-lg tracking-wider text-stone-100 font-bold leading-none">SCOFF TROFF</h1>
+          <p class="font-playfair italic text-xs text-amber-300 tracking-widest mt-0.5">Artisan Cafe • St Ives Cornwall</p>
         </div>
       </div>
-      <a href="tel:+441736797341" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow transition">
-        Call Cafe
+      <a href="tel:+441736797341" class="border border-[#d8a858] hover:bg-[#d8a858] hover:text-black text-amber-200 text-xs font-semibold tracking-wider px-4 py-2 rounded-full transition duration-300 uppercase">
+        Table Inquiry
       </a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="px-4 pt-6 pb-6 max-w-3xl mx-auto text-center">
-    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-300 text-xs font-semibold mb-3">
-      <span>⭐ 4.6★ St Ives Independent Favourite</span>
+  <section class="relative min-h-[560px] flex items-center justify-center px-4 py-16 overflow-hidden">
+    <!-- Hero Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="../assets/hospitality/scofftroff_hero.jpg" alt="Scoff Troff Cafe Breakfast" class="w-full h-full object-cover object-center filter brightness-75 scale-105">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#071513] via-[#071513]/60 to-[#071513]/80"></div>
     </div>
 
-    <h2 class="font-serif-heading text-2xl sm:text-4xl font-extrabold text-white leading-tight mb-3">
-      Proper Cornish Mornings.<br>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">
-        Hearty Coastal Feasts.
-      </span>
-    </h2>
+    <div class="relative z-10 max-w-2xl mx-auto text-center space-y-5">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-stone-900/80 border border-[#d8a858]/40 text-amber-200 text-xs tracking-widest uppercase">
+        <span>★ 4.6★ St Ives' Premier Independent Brunch ★</span>
+      </div>
 
-    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg mx-auto mb-4">
-      Sizzling farmhouse breakfasts, fluffy stacked buttermilk pancakes, artisan Cornish smash burgers, and traditional clotted cream teas—tucked just off St Ives harbour.
-    </p>
+      <h2 class="font-playfair text-3xl sm:text-5xl md:text-6xl font-normal text-stone-100 leading-[1.12]">
+        Proper Cornish Mornings.<br>
+        <span class="italic brass-gradient">Honest Coastal Craft.</span>
+      </h2>
 
-    <!-- Key Badges -->
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-5 text-[11px] font-medium text-teal-200">
-      <span class="bg-teal-950/80 border border-teal-700/50 px-2.5 py-1 rounded-full">🐾 100% Dog Friendly</span>
-      <span class="bg-teal-950/80 border border-teal-700/50 px-2.5 py-1 rounded-full">🌿 Vegan & Veggie Options</span>
-      <span class="bg-teal-950/80 border border-teal-700/50 px-2.5 py-1 rounded-full">🌾 Gluten-Free Available</span>
-    </div>
+      <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-light max-w-lg mx-auto tracking-wide">
+        Tucked just off the cobblestones of St Ives harbour, where golden farmhouse breakfasts, stacked buttermilk pancakes, and Rodda’s clotted cream teas meet the morning sea salt air.
+      </p>
 
-    <!-- Live Status -->
-    <div class="glass-card rounded-xl p-3 max-w-md mx-auto mb-5 flex items-center justify-center gap-2.5 text-xs">
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span class="text-slate-200 font-medium">Open Today: <strong class="text-amber-300">8:30 AM – 4:00 PM</strong> (All-Day Brunch)</span>
-    </div>
+      <!-- Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-2 text-[11px] uppercase tracking-wider text-amber-200">
+        <span class="px-3 py-1 rounded-full luxury-sage-glass">🐾 100% Dog Friendly</span>
+        <span class="px-3 py-1 rounded-full luxury-sage-glass">🌿 Cornish Farm Sourced</span>
+        <span class="px-3 py-1 rounded-full luxury-sage-glass">🌾 Gluten-Free Options</span>
+      </div>
 
-    <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto">
-      <a href="tel:+441736797341" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 px-5 rounded-xl shadow-lg transition text-xs sm:text-sm flex items-center justify-center gap-1.5">
-        <span>📞 Call Table: 01736 797341</span>
-      </a>
-      <a href="#brunch-menu" class="bg-teal-900/60 hover:bg-teal-800/80 text-teal-200 border border-teal-600/40 font-semibold py-2.5 px-5 rounded-xl transition text-xs sm:text-sm flex items-center justify-center gap-1.5">
-        <span>🥞 View Visual Menu</span>
-      </a>
+      <!-- Live Service -->
+      <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full luxury-sage-glass text-xs text-stone-300 font-light">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span>Open Today: <strong class="text-amber-200 font-medium">8:30 AM – 4:00 PM (All-Day Brunch)</strong></span>
+      </div>
+
+      <!-- CTAs -->
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto">
+        <a href="tel:+441736797341" class="bg-gradient-to-r from-[#d8a858] to-[#b5873a] hover:from-[#fae0b0] hover:to-[#d8a858] text-stone-950 font-bold py-3.5 px-6 rounded-full shadow-xl transition tracking-wider text-xs uppercase flex items-center justify-center gap-2">
+          <span>📞 Call Cafe: 01736 797341</span>
+        </a>
+        <a href="#menu" class="border border-stone-600 hover:border-amber-400/60 bg-stone-900/60 backdrop-blur-md text-stone-200 font-medium py-3.5 px-6 rounded-full transition tracking-wider text-xs uppercase flex items-center justify-center gap-2">
+          <span>Explore The Menu</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Hero Photo Banner -->
-  <section class="px-4 py-3 max-w-4xl mx-auto w-full">
-    <div class="relative rounded-2xl overflow-hidden border border-teal-600/30 shadow-xl">
-      <img src="../assets/hospitality/scofftroff_hero.jpg" alt="Scoff Troff Cafe Breakfast" class="w-full h-60 sm:h-72 object-cover">
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0e2730] via-transparent to-transparent"></div>
-      <div class="absolute bottom-3 left-4 right-4">
-        <span class="bg-amber-500 text-slate-950 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">All-Day Breakfast</span>
-        <h3 class="font-serif-heading text-lg font-bold text-white mt-1">The Mighty Cornish Scoff</h3>
-        <p class="text-xs text-slate-300">Cornish sausages, dry-cured bacon, free-range eggs, hogs pudding & toasted sourdough.</p>
-      </div>
+  <!-- Editorial Accolade -->
+  <section class="border-y border-stone-800/80 bg-[#091e1a] py-8 px-4 text-center">
+    <div class="max-w-xl mx-auto space-y-2">
+      <p class="font-playfair italic text-base sm:text-lg text-stone-300">
+        “The kind of seaside haven you wish every British beach town had—unhurried, dog-welcoming, and serving breakfast plates that set you up for a day on the coastal path.”
+      </p>
+      <p class="text-[11px] tracking-[0.25em] uppercase text-[#d8a858]">Cornish Good Food Guide</p>
     </div>
   </section>
 
   <!-- Visual Menu -->
-  <section id="brunch-menu" class="px-4 py-6 max-w-4xl mx-auto w-full">
-    <div class="text-center mb-5">
-      <span class="text-amber-400 text-xs uppercase tracking-widest font-semibold">Freshly Cooked To Order</span>
-      <h3 class="font-serif-heading text-xl font-bold text-white mt-1">Favourite Morning & Lunch Plates</h3>
+  <section id="menu" class="max-w-4xl mx-auto px-4 py-16 w-full space-y-12">
+    <div class="text-center space-y-2">
+      <div class="flex items-center justify-center gap-3">
+        <span class="h-[1px] w-8 bg-[#d8a858]/40"></span>
+        <span class="text-[11px] tracking-[0.3em] uppercase text-amber-300 font-semibold">Morning & Midday Fare</span>
+        <span class="h-[1px] w-8 bg-[#d8a858]/40"></span>
+      </div>
+      <h3 class="font-playfair text-2xl sm:text-4xl text-stone-100 font-normal">Signature Kitchen Plates</h3>
+      <p class="text-xs text-stone-400 max-w-md mx-auto font-light leading-relaxed">Cooked fresh to order using eggs from free-range Cornish hens and bakery sourdough.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
       
-      <!-- Item 1 -->
-      <div class="glass-card rounded-xl p-3 flex gap-3 items-center">
-        <img src="../assets/hospitality/scofftroff_pancakes.jpg" alt="Stacked Pancakes" class="w-20 h-20 rounded-lg object-cover shrink-0 border border-amber-500/20">
+      <!-- Dish 1 -->
+      <div class="luxury-sage-glass rounded-2xl p-4 flex gap-4 items-center group hover:border-[#d8a858]/50 transition duration-300">
+        <img src="../assets/hospitality/scofftroff_hero.jpg" alt="The Mighty Cornish Scoff" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-stone-700">
         <div class="min-w-0 flex-1">
           <div class="flex items-start justify-between gap-1">
-            <h4 class="font-semibold text-sm text-white truncate">Berry Burst Stacked Pancakes</h4>
-            <span class="text-amber-400 font-bold text-sm shrink-0">£11.50</span>
+            <h5 class="font-playfair text-base text-stone-100 font-semibold group-hover:text-amber-200 transition">The Mighty Cornish Scoff</h5>
+            <span class="text-amber-300 font-playfair text-lg font-bold shrink-0">£14.50</span>
           </div>
-          <p class="text-xs text-slate-300 mt-1 line-clamp-2">Three fluffy buttermilk pancakes, berry compote, mascarpone & maple syrup.</p>
-          <span class="inline-block mt-1 text-[10px] bg-amber-950 text-amber-300 border border-amber-800 px-2 py-0.5 rounded">Favourite</span>
+          <p class="text-xs text-stone-400 mt-1 line-clamp-2 font-light">Cornish butcher sausages, dry-cured back bacon, farm eggs, hogs pudding, beans & toast.</p>
+          <span class="inline-block mt-2 text-[9px] tracking-widest uppercase text-amber-400 font-semibold">House Pride</span>
         </div>
       </div>
 
-      <!-- Item 2 -->
-      <div class="glass-card rounded-xl p-3 flex gap-3 items-center">
-        <img src="../assets/hospitality/scofftroff_burger.jpg" alt="Cornish Smash Burger" class="w-20 h-20 rounded-lg object-cover shrink-0 border border-amber-500/20">
+      <!-- Dish 2 -->
+      <div class="luxury-sage-glass rounded-2xl p-4 flex gap-4 items-center group hover:border-[#d8a858]/50 transition duration-300">
+        <img src="../assets/hospitality/scofftroff_pancakes.jpg" alt="Stacked Buttermilk Pancakes" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-stone-700">
         <div class="min-w-0 flex-1">
           <div class="flex items-start justify-between gap-1">
-            <h4 class="font-semibold text-sm text-white truncate">St Ives Harbour Beef Burger</h4>
-            <span class="text-amber-400 font-bold text-sm shrink-0">£15.00</span>
+            <h5 class="font-playfair text-base text-stone-100 font-semibold group-hover:text-amber-200 transition">Berry Burst Stacked Pancakes</h5>
+            <span class="text-amber-300 font-playfair text-lg font-bold shrink-0">£11.50</span>
           </div>
-          <p class="text-xs text-slate-300 mt-1 line-clamp-2">Aged Cornish beef, Davidstow mature cheddar, bacon jam, brioche bun & rosemary chips.</p>
-          <span class="inline-block mt-1 text-[10px] bg-red-950 text-red-300 border border-red-800 px-2 py-0.5 rounded">Hearty Feast</span>
+          <p class="text-xs text-stone-400 mt-1 line-clamp-2 font-light">Fluffy triple buttermilk pancakes, warm wild berry compote, mascarpone & pure maple.</p>
+          <span class="inline-block mt-2 text-[9px] tracking-widest uppercase text-stone-400">All-Day Sweet</span>
         </div>
       </div>
 
-      <!-- Item 3 -->
-      <div class="glass-card rounded-xl p-3 flex gap-3 items-center">
-        <img src="../assets/hospitality/scofftroff_cream_tea.jpg" alt="Cornish Cream Tea" class="w-20 h-20 rounded-lg object-cover shrink-0 border border-amber-500/20">
+      <!-- Dish 3 -->
+      <div class="luxury-sage-glass rounded-2xl p-4 flex gap-4 items-center group hover:border-[#d8a858]/50 transition duration-300">
+        <img src="../assets/hospitality/scofftroff_burger.jpg" alt="St Ives Harbour Smash Burger" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-stone-700">
         <div class="min-w-0 flex-1">
           <div class="flex items-start justify-between gap-1">
-            <h4 class="font-semibold text-sm text-white truncate">Traditional Cornish Cream Tea</h4>
-            <span class="text-amber-400 font-bold text-sm shrink-0">£7.50</span>
+            <h5 class="font-playfair text-base text-stone-100 font-semibold group-hover:text-amber-200 transition">St Ives Harbour Beef Burger</h5>
+            <span class="text-amber-300 font-playfair text-lg font-bold shrink-0">£15.00</span>
           </div>
-          <p class="text-xs text-slate-300 mt-1 line-clamp-2">Warm homemade scones, Rodda's Cornish clotted cream, Boddington's strawberry jam & tea.</p>
-          <span class="inline-block mt-1 text-[10px] bg-teal-950 text-teal-300 border border-teal-800 px-2 py-0.5 rounded">Jam First!</span>
+          <p class="text-xs text-stone-400 mt-1 line-clamp-2 font-light">Dry-aged Cornish beef patties, mature Davidstow cheddar, house bacon jam & rosemary chips.</p>
+          <span class="inline-block mt-2 text-[9px] tracking-widest uppercase text-amber-400 font-semibold">Lunch Favourite</span>
         </div>
       </div>
 
-      <!-- Item 4 -->
-      <div class="glass-card rounded-xl p-3 flex gap-3 items-center">
-        <div class="w-20 h-20 rounded-lg bg-teal-900/60 flex items-center justify-center text-2xl shrink-0 border border-teal-700/50">
-          ☕
-        </div>
+      <!-- Dish 4 -->
+      <div class="luxury-sage-glass rounded-2xl p-4 flex gap-4 items-center group hover:border-[#d8a858]/50 transition duration-300">
+        <img src="../assets/hospitality/scofftroff_cream_tea.jpg" alt="Traditional Cornish Cream Tea" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-stone-700">
         <div class="min-w-0 flex-1">
           <div class="flex items-start justify-between gap-1">
-            <h4 class="font-semibold text-sm text-white truncate">Cornish Roast Coffee & Teas</h4>
-            <span class="text-amber-400 font-bold text-sm shrink-0">from £3.20</span>
+            <h5 class="font-playfair text-base text-stone-100 font-semibold group-hover:text-amber-200 transition">Traditional Cornish Cream Tea</h5>
+            <span class="text-amber-300 font-playfair text-lg font-bold shrink-0">£7.50</span>
           </div>
-          <p class="text-xs text-slate-300 mt-1 line-clamp-2">Artisan flat whites, iced coffees, loose-leaf Cornish tea, and hot chocolates.</p>
-          <span class="inline-block mt-1 text-[10px] bg-blue-950 text-blue-300 border border-blue-800 px-2 py-0.5 rounded">Oat & Soya Ready</span>
+          <p class="text-xs text-stone-400 mt-1 line-clamp-2 font-light">Two warm buttermilk scones, thick Rodda's Cornish clotted cream & Boddington’s jam (Jam first!).</p>
+          <span class="inline-block mt-2 text-[9px] tracking-widest uppercase text-stone-400">Cornish Classic</span>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Location Callout -->
-  <section class="px-4 py-5 max-w-3xl mx-auto w-full text-center">
-    <div class="bg-[#091a20] rounded-2xl p-4 border border-teal-800/40">
-      <h4 class="font-serif-heading text-sm font-bold text-white mb-1">Find Us in St Ives</h4>
-      <p class="text-xs text-slate-300 mb-3">Tucked on Fore Street, 60 seconds walk from St Ives Harbour and beach slipways.</p>
-      <div class="flex gap-2 justify-center">
-        <a href="https://maps.google.com/?q=Scoff+Troff+Cafe+St+Ives" target="_blank" class="bg-teal-900 hover:bg-teal-800 text-white text-xs font-semibold py-2 px-4 rounded-lg transition border border-teal-700">
-          📍 Open in Google Maps
-        </a>
-        <a href="tel:+441736797341" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold py-2 px-4 rounded-lg transition">
-          📞 01736 797341
-        </a>
-      </div>
+  <!-- Location Concierge -->
+  <section class="max-w-3xl mx-auto px-4 py-8 text-center space-y-4">
+    <h4 class="font-playfair text-xl text-stone-100">Finding Us on Fore Street</h4>
+    <p class="text-xs text-stone-400 max-w-md mx-auto font-light leading-relaxed">
+      A 60-second stroll from St Ives Harbour Beach. Dogs of all sizes always welcome with fresh water bowls provided.
+    </p>
+    <div class="flex justify-center gap-3 pt-2">
+      <a href="https://maps.google.com/?q=Scoff+Troff+Cafe+St+Ives" target="_blank" class="border border-stone-700 hover:border-amber-400 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-stone-200 transition">
+        📍 Google Maps Navigation
+      </a>
+      <a href="tel:+441736797341" class="bg-[#d8a858] hover:bg-[#b5873a] text-black px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition">
+        📞 01736 797341
+      </a>
     </div>
   </section>
 
-  <!-- Sticky Mobile Bar -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-[#0e2730]/95 backdrop-blur-md border-t border-teal-800/60 p-2 px-4 flex gap-2.5">
-    <a href="tel:+441736797341" class="flex-1 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-xl text-center text-xs flex items-center justify-center gap-1">
-      <span>📞 Call Cafe (01736 797341)</span>
+  <!-- Fixed Mobile Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-[#071513]/95 backdrop-blur-xl border-t border-[#d8a858]/30 p-3 px-5 flex gap-3">
+    <a href="tel:+441736797341" class="flex-1 bg-gradient-to-r from-[#d8a858] to-[#b5873a] hover:from-[#fae0b0] hover:to-[#d8a858] text-stone-950 font-bold py-3 px-4 rounded-xl text-center text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-2xl">
+      <span>📞 Call Cafe</span>
     </a>
-    <a href="https://maps.google.com/?q=Scoff+Troff+Cafe+St+Ives" target="_blank" class="flex-1 bg-teal-700 hover:bg-teal-600 text-white font-bold py-2.5 rounded-xl text-center text-xs flex items-center justify-center gap-1">
-      <span>📍 Directions (Fore St)</span>
+    <a href="https://maps.google.com/?q=Scoff+Troff+Cafe+St+Ives" target="_blank" class="flex-1 bg-stone-900 border border-[#d8a858]/40 hover:border-amber-400 text-amber-200 font-bold py-3 px-4 rounded-xl text-center text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-2xl">
+      <span>📍 St Ives Directions</span>
     </a>
   </div>
+
 </body>
 </html>
