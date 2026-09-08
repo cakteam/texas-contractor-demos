@@ -37,6 +37,16 @@
 
 ---
 
+## 1.4 第四批（Wave 4 - 欧美澳旅游胜地高品质餐饮独立站）已就绪待发
+
+| 目标餐厅 / 咖啡馆 | 国家与旅游胜地 | 核心品类与定位 | 直联收件地址 | 演示站点 (Live URL) | 邮件视觉真机图 (Inline CID) | 当前状态 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Bar Harbor Lobster Bakes** | 🇺🇸 美国<br>缅因州 Bar Harbor<br>(阿卡迪亚国家公园) | 传统海藻清蒸缅因龙虾、蛤蜊浓汤与野生蓝莓派 | `barharborlobsterbakes@gmail.com` | [Bar Harbor Demo](https://cakteam.github.io/texas-contractor-demos/barharborlobster/) | `10_bar_harbor_mockup.png`<br>*(807 KB 真实龙虾盛盘真机图)* | **READY (已就绪)** |
+| **Scoff Troff Cafe** | 🇬🇧 英国<br>康沃尔郡 St Ives<br>(英国顶级滨海度假地) | 康沃尔手工早午餐、美式厚松饼与传统凝脂奶油红茶 (全宠物友好) | `scofftroffcafe@hotmail.co.uk` | [Scoff Troff Demo](https://cakteam.github.io/texas-contractor-demos/scofftroff/) | `11_scoff_troff_mockup.png`<br>*(551 KB 经典英式早餐真机图)* | **READY (已就绪)** |
+| **Dip Cafe** | 🇦🇺 澳大利亚<br>新州 Byron Bay<br>(拜伦湾冲浪与度假胜地) | 法式手工烘焙奶油面包法式吐司、地中海北非蛋与精品澳白咖啡 | `dipcafebyronbay@gmail.com` | [Dip Cafe Demo](https://cakteam.github.io/texas-contractor-demos/dipcafe/) | `12_dip_cafe_mockup.png`<br>*(596 KB 杂志级法式吐司真机图)* | **READY (已就绪)** |
+
+---
+
 ## 2. 用户自测验证记录
 - **自测收件箱**：`bieke609@gmail.com`
 - **自测主题**：`Quick heads-up about a formatting glitch on goodrootsroofing.com (+ live concept for you)`

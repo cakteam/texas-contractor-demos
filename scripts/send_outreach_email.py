@@ -175,6 +175,57 @@ TARGET_PROFILES = {
             "Alternate site is a client-side JavaScript shell that can experience delays on mobile devices",
             "Lacks an interactive luxury transformation slider comparing aged plaster to Midnight Pebble and travertine"
         ]
+    },
+    "barharborlobster": {
+        "name": "Bar Harbor Lobster Bakes",
+        "city": "Bar Harbor, Mount Desert Island, ME",
+        "industry": "authentic Down-East lobster traditions and local dining spots",
+        "recipient_name": "Bar Harbor Lobster Bakes Team",
+        "recipient_email": "barharborlobsterbakes@gmail.com",
+        "phone": "(207) 288-4597",
+        "current_url": "https://www.facebook.com/BarHarborLobsterBakes/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/barharborlobster/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "10_bar_harbor_mockup.png",
+        "subject": "Quick thought on your Google Maps listing (+ built an Acadia lobster bake concept for you)",
+        "pain_points": [
+            "Google Maps links directly to Facebook where mobile vacationers hit login walls or outdated feeds",
+            "No 1-tap mobile menu displaying tonight's live steamed lobster sizes, market price, or Down-East bake inclusions",
+            "Lacks 1-tap GPS directions and group seating call actions for tourists returning from Acadia National Park"
+        ]
+    },
+    "scofftroff": {
+        "name": "Scoff Troff Cafe",
+        "city": "St Ives, Cornwall, UK",
+        "industry": "independent cafes and coastal dining spots",
+        "recipient_name": "Scoff Troff Cafe Team",
+        "recipient_email": "scofftroffcafe@hotmail.co.uk",
+        "phone": "+44 1736 797341",
+        "current_url": "https://www.facebook.com/ScoffTroffCafe/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/scofftroff/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "11_scoff_troff_mockup.png",
+        "subject": "Quick thought on your St Ives Google Maps link (+ built a mobile menu concept for you)",
+        "pain_points": [
+            "Google Maps website button directs to Facebook where spotty Cornish mobile signals cause slow loading",
+            "Holidaymakers coming off the beach can't quickly view all-day breakfast plates, pancake specials, or vegan options",
+            "Doesn't prominently showcase 100% Dog-Friendly & Gluten-Free badges on a dedicated mobile menu"
+        ]
+    },
+    "dipcafe": {
+        "name": "Dip Cafe",
+        "city": "Byron Bay, NSW, Australia",
+        "industry": "top-rated breakfast and artisan brunch spots",
+        "recipient_name": "Dip Cafe Team",
+        "recipient_email": "dipcafebyronbay@gmail.com",
+        "phone": "+61 2 6680 8864",
+        "current_url": "https://www.facebook.com/dipcafebyronbay/",
+        "demo_url": "https://cakteam.github.io/texas-contractor-demos/dipcafe/",
+        "visual_hook": BASE_DIR / "04_PREVIEWS" / "visual_hooks" / "12_dip_cafe_mockup.png",
+        "subject": "Quick thought on your Byron Bay Google Maps link (+ built a mobile concept for Dip Cafe)",
+        "pain_points": [
+            "Google Maps directs straight to Facebook, lacking an editorial visual menu for design-conscious Byron travelers",
+            "Signature dishes (Brioche French Toast, Baked Eggs Shakshuka) are buried in uncurated social posts",
+            "No 1-tap table enquiry button or walk-in hours indicator for vacationers strolling Fletcher Street"
+        ]
     }
 }
 
@@ -191,11 +242,12 @@ def load_env():
 
 def build_email_content(target_key, sender_name, sender_email):
     target = TARGET_PROFILES[target_key]
+    industry_phrase = target.get("industry", "reputable home service contractors")
     
     # 1. Plain Text Version (Vital for Spam Deliverability)
     text_body = f"""Hi {target['recipient_name']},
 
-I was looking at {target['name']} ({target['current_url']}) while researching reputable home service contractors around {target['city']}, and wanted to quickly share a couple of observations:
+I was looking at {target['name']} ({target['current_url']}) while researching {industry_phrase} around {target['city']}, and wanted to quickly share a couple of observations:
 
 Current conversion roadblocks on your live site:
 • {target['pain_points'][0]}
@@ -206,11 +258,11 @@ Because you have great local reputation and reviews, I built a fast, modern mobi
 
 👉 Live Mobile Demo: {target['demo_url']}
 
-(I've also attached a short 5-second mobile preview showing the interactive booking experience)
+(I've also attached a clean mobile mockup showing the interactive experience)
 
-No cost, no pushy sales pitch. If you like how it presents your business and want to put it to work to capture more high-value inquiries, I'd be happy to help you get it live. If you're happy with your current setup, no problem at all—you're free to keep any of the ideas or copy!
+No cost, no pushy sales pitch. If you like how it presents your business and want to put it to work to capture more visitors, I'd be happy to help you get it live. If you're happy with your current setup, no problem at all—you're free to keep any of the ideas or copy!
 
-Either way, hope this heads-up helps you fix the issue on your current site.
+Either way, hope this heads-up helps you optimize your Google Maps traffic.
 
 Best regards,
 
@@ -244,7 +296,7 @@ Opt-out: If this isn't relevant to you, simply reply with "pass" or "stop" and I
     <span class="badge">TAILORED CONCEPT • {target['city']}</span>
     <p>Hi <strong>{target['recipient_name']}</strong>,</p>
     
-    <p>I was looking over <strong>{target['name']}</strong> while researching top-rated local contractors in your area, and wanted to quickly flag a couple of technical items on your current website (<code>{target['current_url']}</code>):</p>
+    <p>I was looking over <strong>{target['name']}</strong> while researching {industry_phrase} in your area, and wanted to quickly flag a couple of items on your current web presence (<code>{target['current_url']}</code>):</p>
     
     <ul>
       <li><strong style="color: #dc2626;">Item 1:</strong> {target['pain_points'][0]}</li>
@@ -379,7 +431,7 @@ def send_email(target_key, test_recipient=None, dry_run=True, force_send=False):
 
 def main():
     parser = argparse.ArgumentParser(description="Commercial Outreach Email Dispatcher via Gmail")
-    parser.add_argument("--target", choices=["goodroots", "amatttree", "dapco", "duckac", "ameritex", "calldadac", "bourdonfence", "rockwater", "elevatedpool"], default="goodroots",
+    parser.add_argument("--target", choices=list(TARGET_PROFILES.keys()), default="goodroots",
                         help="Target business profile to send")
     parser.add_argument("--test-to", type=str, default=None,
                         help="Send a live test to your own inbox to preview on your phone")
