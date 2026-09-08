@@ -49,8 +49,12 @@
 
 ## 2. 用户自测验证记录
 - **自测收件箱**：`bieke609@gmail.com`
-- **自测主题**：`Quick heads-up about a formatting glitch on goodrootsroofing.com (+ live concept for you)`
-- **发送状态**：✅ SUCCESS（请在手机 Gmail App 或网页端查收，检查内联动图与页面排版）
+- **首期承包商测试件**：`Quick heads-up about a formatting glitch on goodrootsroofing.com (+ live concept for you)` (✅ SUCCESS)
+- **第四期跨国餐饮测试件（最新已送达）**：
+  1. 🇺🇸 `Quick thought on your Google Maps listing (+ built an Acadia lobster bake concept for you)` (Bar Harbor Lobster) (✅ SUCCESS)
+  2. 🇬🇧 `Quick thought on your St Ives Google Maps link (+ built a mobile menu concept for you)` (Scoff Troff Cafe) (✅ SUCCESS)
+  3. 🇦🇺 `Quick thought on your Byron Bay Google Maps link (+ built a mobile concept for Dip Cafe)` (Dip Cafe) (✅ SUCCESS)
+- **查收提示**：请在手机 Gmail App 或电脑网页端查收，检查内嵌真机长图视觉、地道英文用词与排版呈现。
 
 ---
 
